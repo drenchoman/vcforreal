@@ -1,0 +1,26 @@
+/* USE UTILITY CLASSES SPARINGLY
+
+I need it repeatedly;
+It does one thing well;
+It applies across a range of different components or pages. */
+
+.lockup {
+  max-width: 90ch;
+  margin: 0 auto;
+}
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.grid{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-item-width, 30ch), 1fr));
+  gap: var(--space-md);
+}

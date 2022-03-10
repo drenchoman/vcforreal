@@ -1,0 +1,11 @@
+
+.navLinks{
+  display: flex;
+  list-style: none;
+
+}
+
+.navLinks > * {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
