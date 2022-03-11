@@ -1,7 +1,11 @@
 import styles from './Navbar.module.css'
+import Image from 'next/image'
+import NavbarFav from './NavbarFav'
 
-const NavbarLinks = (props) => {
-  const {links} = props
+
+const NavbarLinks = ({links, heart}) => {
+
+
   return(
 
       <ul className={styles.navLinks}>
@@ -10,9 +14,15 @@ const NavbarLinks = (props) => {
             <li key={link}>{link}</li>
 
           )}
+          <li>
+            <NavbarFav heart={heart} className={styles.desktopFav} />
+          </li>
+
+
+
 
       </ul>
-  
+
 
   )
 }

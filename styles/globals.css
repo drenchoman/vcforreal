@@ -47,3 +47,8 @@ img {
 ul{
   padding: 0;
 }
+
+hr{
+  border: 1px solid var(--dark);
+  width: 100%;
+}

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 import logo from '../public/logos/logo-white.svg'
-
+import heart from '../public/images/heart2.svg'
 
 const links = [ "About", "Explore", "Discover"
 ]
@@ -11,7 +11,7 @@ const links = [ "About", "Explore", "Discover"
 export default function Home() {
 return (
 <>
-  <Navbar logo={logo} links={links} />
+  <Navbar logo={logo} links={links} heart={heart} />
  <main className="lockup">
 
   <h1>Vintage Clothing </h1>
