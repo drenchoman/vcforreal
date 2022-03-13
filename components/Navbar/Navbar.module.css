@@ -2,6 +2,8 @@
 .navLinks{
   display: flex;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -9,10 +11,88 @@
   display: none;
 }
 
+.desktopFav{
+  background-color: var(--off-white);
+  padding: var(--space-sm);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileFav{
+  background-color: var(--off-white);
+  padding: var(--space-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  right: 5rem;
+  /* animation: pulse 1s ease-in-out; */
+
+}
+
+.pulse{
+  animation: pulse .6s ease-in-out;
+}
+
+.modalContainer{
+  display: flex;
+  margin: var(--space-xl) auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadein 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+
+.small{
+  background: var(--off-white);
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 2.5rem;
+    top: 3rem;
+    transform: translateY(100%);
+    opacity: 0.75;
+    transition: all 0.5s ease;
+    overflow: hidden;
+
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes pulse {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.2)}
+  100% {transform: scale(1.0)}
+}
+
+.heartModal{
+  width: 100vw;
+  height: 100vh;
+  top: 0rem;
+  transform: translateY(0%);
+  margin-left: 0px;
+  margin-right: 0px;
+  right: 0;
+  border-radius: 0;
+  background: var(--green);
+  transition: all 1s ease;
+  opacity: 1;
+  position: absolute;
+}
+
 .mobileLinksWrapper{
   width: 250px;
   height: 100vh;
-  background-color: var(--green);
+  background-color: var(--pink);
   position: fixed;
   top: 0;
   /* z-index: 5; */
@@ -36,8 +116,8 @@
   list-style: none;
   flex-direction: column;
   text-align: center;
-  justify-content: space-around;
-  height: 60vh;
+  justify-content: flex-start;
+  /* height: 60vh; */
 
 }
 
@@ -53,8 +133,20 @@
   transition: all 0.5s ease;
   opacity: 0;
   border-radius: var(--radius-sm);
+  background-color: var(--green);
+  color: var(--dark);
+  border: 0;
+  padding: var(--space-sm);
+  margin: var(--space-md);
+  width: 100%;
+  max-width: 75px;
+}
+/* Need to fix animations, cant reuse button component as it has opacity 0 */
+
+.storeButton{
+  border-radius: var(--radius-sm);
   background-color: var(--dark);
-  color: var(--green);
+  color: var(--off-white);
   border: 0;
   padding: var(--space-sm);
   margin: var(--space-md);
@@ -80,6 +172,7 @@
   opacity: 0;
   transform:rotate(-90deg);
   transition: all 0.5s;
+  margin: var(--space-lg) 0;
   padding: var(--space-md) var(--space-md);
   background-color: var(--off-white);
   color: var(--dark);
@@ -161,8 +254,15 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > * {
+  .mobileNav > .mobileFav, .burger  {
     margin: 0 var(--space-md)
+  }
+  .small{
+    position: absolute;
+    right: 6.5rem;
+    top: 0.5rem;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -184,8 +284,15 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > * {
+  .mobileNav > .mobileFav, .burger  {
     margin: 0 var(--space-md)
+  }
+  .small{
+    position: absolute;
+    right: 6.5rem;
+    top: 0.5rem;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -207,8 +314,15 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > * {
+  .mobileNav > .mobileFav, .burger {
     margin: 0 var(--space-md)
+  }
+  .small{
+    position: absolute;
+    right: 6.5rem;
+    top: 0.5rem;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -231,7 +345,14 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > * {
+  .mobileNav > .mobileFav, .burger {
     margin: 0 var(--space-md)
+  }
+  .small{
+    position: absolute;
+    right: 6.5rem;
+    top: 0.5rem;
+    width: 30px;
+    height: 30px;
   }
 }

@@ -1,15 +1,34 @@
 import Image from 'next/image'
+import {useState} from 'react'
+import styles from './Navbar.module.css'
 
 const NavbarFav = ({heart, className}) => {
+  const [heartClicked, setHeartClicked] = useState(false);
+
+  const handleClick = () => {
+    setHeartClicked(!heartClicked)
+  }
+
   return(
-  <div className={className}>
-    <Image
-      width={30}
-      height={30}
-      alt=''
-      src={heart}
-      />
+    <>
+  <div className={`${heartClicked ? styles.heartModal : styles.small}`} >
+    {heartClicked &&
+      // Need to create seperate component for this container
+    <div className={styles.modalContainer}>
+      <h2> Your favourite stores </h2>
+      <button className={styles.storeButton}>Explore</button>
+    </div>
+  }
   </div>
+  <div onClick={handleClick} className={`${className} ${heartClicked ? styles.pulse : ""}`}>
+  <Image
+    width={30}
+    height={30}
+    alt=''
+    src={heart}
+    />
+  </div>
+</>
 )
 }
 

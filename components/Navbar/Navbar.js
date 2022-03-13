@@ -20,6 +20,7 @@ const Navbar = (props) => {
   return <nav className="navbar">
     <NavbarLogo logo={props.logo} />
     <NavbarLinks links={props.links} heart={props.heart}  />
+
     <div className={styles.mobileNav}>
     <NavbarFav heart={props.heart} className={styles.mobileFav} />
     <NavbarBurger handleClick={handleClick} navClicked={navClicked} />
