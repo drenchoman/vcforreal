@@ -18,6 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
+  right: 1.5rem;
+  position: absolute;
 }
 
 .mobileFav{
@@ -28,10 +31,12 @@
   align-items: center;
   border-radius: 100%;
   position: absolute;
+  z-index: 6;
   right: 5rem;
   /* animation: pulse 1s ease-in-out; */
 
 }
+/* TO DO: Create pulse for when closed? */
 
 .pulse{
   animation: pulse .6s ease-in-out;
@@ -45,13 +50,14 @@
   flex-direction: column;
   animation: fadein 1s ease forwards;
   opacity: 0;
-  animation-delay: 1s;
+
+  animation-delay: 0.7s;
 }
 
-
+/* Remove z-index if I want to hide circle on close */
 .small{
   background: var(--off-white);
-    border-radius: 100%;
+    border-radius: 25%;
     width: 5px;
     height: 5px;
     position: absolute;
@@ -61,6 +67,7 @@
     opacity: 0.75;
     transition: all 0.5s ease;
     overflow: hidden;
+    z-index: 5;
 
 }
 @keyframes fadein {
@@ -77,16 +84,18 @@
 .heartModal{
   width: 100vw;
   height: 100vh;
-  top: 0rem;
+  top: 0;
   transform: translateY(0%);
   margin-left: 0px;
   margin-right: 0px;
   right: 0;
   border-radius: 0;
   background: var(--green);
-  transition: all 1s ease;
+  transition: all 0.7s ease;
   opacity: 1;
   position: absolute;
+  overflow: hidden;
+  z-index: 5;
 }
 
 .mobileLinksWrapper{
@@ -193,7 +202,11 @@
 
 }
 
-.navLinks > * {
+.navLinks{
+  margin-right: 5rem;
+}
+
+.navLinks > .linkItems {
   margin: 0 var(--space-md);
   padding: 0 var(--space-sm);
 }
