@@ -1,14 +1,21 @@
 import styles from './Landing.module.css'
-
+import arrow from '../../public/images/arrow.svg'
+import Image from 'next/image'
 
 const LandingContent = (props) => {
   return(
     <div className={styles.landingContent}>
-    <h1>Vintage Clothing </h1>
+    <h1 className={styles.header}>VINTAGE CLOTHING </h1>
 
-    <h2>And so much more </h2>
+    <h2 className={styles.subHeader}>And so much more </h2>
+    <div className={styles.arrow}>
+    <Image
+      src={arrow}
+      height={50}
+      width={50}
+    />
+    </div>
 
-    <p> Explore over 100+ stores and find your new favourite store </p>
     </div>
   )
 }

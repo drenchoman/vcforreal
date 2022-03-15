@@ -4,22 +4,162 @@
 }
 
 .landingImage{
-  width: 100%;
-  height: 100vh;
+  width: 80%;
+  height: 80%;
   position: relative;
-  
+  display: flex;
 
+
+}
+.landingImage::before{
+  background-color: var(--main);
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: relative;
+  right: 1rem;
+  bottom: 1rem;
+  content: "";
+}
+
+.landingImage::after{
+  background-color: var(--paragraph);
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: relative;
+  left: 1rem;
+  top: 1rem;
+  content: "";
 }
 
 .landingContainer{
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .landingContent{
   position: absolute;
-  top: 0;
+  width: 50ch;
+  text-align: left;
+  top: var(--space-sm);
+  left: var(--space-lg);
   display: flex;
   flex-direction: column;
   padding: var(--space-md);
   color: var(--dark)
+}
+
+.header {
+line-height: 1.5;
+letter-spacing: 0.6rem;
+padding-left: var(--space-sm);
+margin-top: 0px;
+font-size: var(--font-size-tablet-lg);
+}
+
+.subHeader{
+  font-weight: 200;
+  text-align: left;
+  padding-left: var(--space-sm);
+  font-size: var(--font-size-tablet-md);
+  margin: 0;
+
+}
+
+.arrow{
+  text-align: center;
+
+  margin:  var(--space-sm) 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+  .landingContent{
+    width: 50ch;
+  }
+  .header{
+    font-size: var(--font-size-tablet-lg);
+  }
+  .subHeader{
+    font-size: var(--font-size-tablet-md);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+  .landingContent{
+    width: 50ch;
+  }
+  .header{
+    font-size: var(--font-size-tablet-lg);
+  }
+  .subHeader{
+    font-size: var(--font-size-tablet-md);
+  }
+}
+
+@media screen and (max-width: 720px){
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+  .landingContent{
+    width: 25ch;
+  }
+  .header{
+    font-size: var(--font-size-lg);
+  }
+  .subHeader{
+    font-size: var(--font-size-md);
+  }
+}
+
+@media screen and (max-width: 375px){
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+  .landingContent{
+    width: 25ch;
+  }
+  .header{
+    font-size: var(--font-size-lg);
+  }
+  .subHeader{
+    font-size: var(--font-size-md);
+  }
+}
+
+@media only screen and (max-width: 325px){
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+  .landingContent{
+    width: 25ch;
+  }
+  .header{
+    font-size: var(--font-size-lg);
+  }
+  .subHeader{
+    font-size: var(--font-size-md);
+  }
 }

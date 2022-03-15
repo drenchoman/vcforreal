@@ -16,7 +16,7 @@ return (
   <Navbar logo={logo} links={links} heart={heart} />
  <main className="lockup">
  <Landing landingImage={girl} />
-  
+
 
 </main>
 </>

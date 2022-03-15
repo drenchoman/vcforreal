@@ -12,7 +12,7 @@
 }
 
 .desktopFav{
-  background-color: var(--off-white);
+  background-color: var(--secondary);
   padding: var(--space-sm);
   border-radius: 100%;
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 .mobileFav{
-  background-color: var(--off-white);
+  background-color: var(--secondary);
   padding: var(--space-sm);
   display: flex;
   justify-content: center;
@@ -35,6 +35,11 @@
   right: 5rem;
   /* animation: pulse 1s ease-in-out; */
 
+}
+
+.desktopFav:hover{
+  background-color: var(--button);
+  cursor: pointer;
 }
 /* TO DO: Create pulse for when closed? */
 
@@ -56,7 +61,7 @@
 
 /* Remove z-index if I want to hide circle on close */
 .small{
-  background: var(--off-white);
+  background: var(--secondary);
     border-radius: 25%;
     width: 5px;
     height: 5px;
@@ -90,7 +95,7 @@
   margin-right: 0px;
   right: 0;
   border-radius: 0;
-  background: var(--green);
+  background: var(--main);
   transition: all 0.7s ease;
   opacity: 1;
   position: absolute;
@@ -101,11 +106,12 @@
 .mobileLinksWrapper{
   width: 250px;
   height: 100vh;
-  background-color: var(--pink);
+  background-color: var(--main);
   position: fixed;
   top: 0;
   /* z-index: 5; */
   right: -250px;
+  z-index: 8;
   display: none;
   transition: all 0.5s;
   justify-content: center;
@@ -126,6 +132,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: flex-start;
+
   /* height: 60vh; */
 
 }
@@ -142,20 +149,20 @@
   transition: all 0.5s ease;
   opacity: 0;
   border-radius: var(--radius-sm);
-  background-color: var(--green);
-  color: var(--dark);
+  background-color: var(--button);
+  color: var(--header);
   border: 0;
   padding: var(--space-sm);
   margin: var(--space-md);
   width: 100%;
-  max-width: 75px;
+  /* max-width: 75px; */
 }
 /* Need to fix animations, cant reuse button component as it has opacity 0 */
 
 .storeButton{
   border-radius: var(--radius-sm);
-  background-color: var(--dark);
-  color: var(--off-white);
+  background-color: var(--button);
+  color: var(--header);
   border: 0;
   padding: var(--space-sm);
   margin: var(--space-md);
@@ -183,8 +190,8 @@
   transition: all 0.5s;
   margin: var(--space-lg) 0;
   padding: var(--space-md) var(--space-md);
-  background-color: var(--off-white);
-  color: var(--dark);
+  background-color: var(--card);
+  color: var(--header);
   border-radius: var(--radius-sm);
 
 }
@@ -212,21 +219,23 @@
 }
 
 .burger{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  border: 5px solid #49b293;
+  border: 3px solid var(--button);
   display: none;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  z-index: 10;
   transition: all 0.3s ease;
+  margin-right:
 }
 .burger div{
-  height: 8px;
-  width: 85%;
-  background-color: #fff;
+  height: 4px;
+  width: 90%;
+  background-color: var(--header);
   /* position: absolute; */
   transition: all 0.5s ease;
 }
@@ -234,10 +243,12 @@
 .activeBurger{
   border-radius:50%;
   transition: all 0.3s ease;
+  z-index: 10;
+  border-color: var(--button);
 }
 
 .firstActive{
-  transform: translateY(12px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
   transition: all 0.5s ease;
 }
 .secondActive{
@@ -245,7 +256,7 @@
   transition: all 0.2s ease;
 }
 .thirdActive{
-  transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
   transition: all 0.5s ease;
 }
 
@@ -253,6 +264,7 @@
 @media screen and (max-width: 720px){
   .burger{
     display: flex;
+    margin: 0 var(--space-lg) 0 0;
   }
   .navLinks{
     display: none;
@@ -267,22 +279,18 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > .mobileFav, .burger  {
-    margin: 0 var(--space-md)
-  }
   .small{
     position: absolute;
-    right: 6.5rem;
-    top: 0.5rem;
-    width: 30px;
-    height: 30px;
+    right: 6rem;
+    top: 3rem;
+
   }
 }
 
 @media only screen and (max-width: 414px){
   .burger{
     display: flex;
-    z-index: 5;
+    margin: 0 var(--space-lg) 0 0;
   }
   .navLinks{
     display: none;
@@ -297,22 +305,23 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > .mobileFav, .burger  {
-    margin: 0 var(--space-md)
-  }
+
+  /* .mobileFav{
+    margin: 0 var(--space-sm);
+  } */
   .small{
     position: absolute;
-    right: 6.5rem;
-    top: 0.5rem;
-    width: 30px;
-    height: 30px;
+    right: 6rem;
+    top: 3rem;
+
+
   }
 }
 
 @media only screen and (max-width: 375px){
   .burger{
     display: flex;
-    z-index: 5;
+    margin: 0 var(--space-lg) 0 0;
   }
   .navLinks{
     display: none;
@@ -327,22 +336,22 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > .mobileFav, .burger {
-    margin: 0 var(--space-md)
-  }
+
+  /* .mobileFav{
+    margin: 0 var(--space-sm);
+  } */
   .small{
     position: absolute;
-    right: 6.5rem;
-    top: 0.5rem;
-    width: 30px;
-    height: 30px;
+    right: 6rem;
+    top: 3rem;
+
   }
 }
 
 @media only screen and (max-width: 325px){
   .burger{
     display: flex;
-    z-index: 5;
+    margin: 0 var(--space-lg) 0 0;
   }
   .navLinks{
     display: none;
@@ -358,14 +367,14 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .mobileNav > .mobileFav, .burger {
-    margin: 0 var(--space-md)
-  }
+
+  /* .mobileFav{
+    margin: 0 var(--space-sm);
+  } */
   .small{
     position: absolute;
-    right: 6.5rem;
-    top: 0.5rem;
-    width: 30px;
-    height: 30px;
+    right: 6rem;
+    top: 3rem;
+
   }
 }

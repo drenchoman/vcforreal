@@ -22,8 +22,8 @@ const NavbarFav = ({heart, className}) => {
   </div>
   <div onClick={handleClick} className={`${className} ${heartClicked ? styles.pulse : ""}`}>
   <Image
-    width={30}
-    height={30}
+    width={22}
+    height={22}
     alt=''
     src={heart}
     />

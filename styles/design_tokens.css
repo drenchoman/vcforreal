@@ -2,12 +2,22 @@
   --green: #3FE79E;
   --dark: #0F0235;
   --off-white: #F5F5F3;
-  --pink: #FFB4B4;
+
+  --background: #fef6e4;
+  --header: #001858;
+  --button: #f582ae;
+  --button-text: #001858;
+  --paragraph: #172c66;
+  --main: #f3d2c1;
+  --card: #fef6e4;
+  --secondary: #8bd3dd;
+
 
   --space-ss: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
+  --space-lgr: 2rem;
   --space-xl: 5rem;
 
   --min-item-width: 35ch;
@@ -15,6 +25,10 @@
   --font-size-sm: 0.5rem;
   --font-size-md: 1rem;
   --font-size-lg: 2rem;
+
+  --font-size-tablet-lg: 3rem;
+  --font-size-tablet-md: 2rem;
+  --font-size-tablet-sm: 1rem;
 
   --delay1: 0.5s;
   --delay2: 0.6s;
