@@ -8,9 +8,8 @@
   height: 80%;
   position: relative;
   display: flex;
-
-
 }
+
 .landingImage::before{
   background-color: var(--main);
   width: 100%;
@@ -40,6 +39,9 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  max-width: 90ch;
+  width: 100%;
+
 }
 
 .landingContent{
@@ -73,7 +75,6 @@ font-size: var(--font-size-tablet-lg);
 
 .arrow{
   text-align: center;
-
   margin:  var(--space-sm) 0;
 }
 
