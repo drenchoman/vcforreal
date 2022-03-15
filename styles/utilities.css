@@ -25,6 +25,8 @@ It applies across a range of different components or pages. */
 .grid{
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--min-item-width, 30ch), 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
+  padding:var(--space-md);
+  /* width: 100%; */
 }

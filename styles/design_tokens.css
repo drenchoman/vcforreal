@@ -24,6 +24,7 @@
 
   --font-size-sm: 0.5rem;
   --font-size-md: 1rem;
+  --font-size-mdl: 1.2rem;
   --font-size-lg: 2rem;
 
   --font-size-tablet-lg: 3rem;
@@ -35,4 +36,6 @@
   --delay3: 0.7s;
 
   --radius-sm: 5px;
+
+  --curtain-height: 98vh;
 }
