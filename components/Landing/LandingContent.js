@@ -13,6 +13,7 @@ const LandingContent = (props) => {
       src={arrow}
       height={50}
       width={50}
+      alt=""
     />
     </div>
 
