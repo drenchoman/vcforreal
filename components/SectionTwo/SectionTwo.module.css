@@ -1,0 +1,170 @@
+.cubeHolder{
+  background-image: url('../../public/images/cube.svg');
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: -1rem;
+  overflow-y: hidden;
+
+}
+
+.wrapper{
+  display: flex;
+  max-height: 80vh;
+  height: 100%;
+
+}
+.copyWrapper{
+  justify-self:center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 3rem;
+}
+
+.s2Button{
+  justify-self:center;
+  align-self: center;
+}
+
+
+.header{
+  font-size: var(--font-size-tablet-lgr);
+  text-align: center;
+  width: 100%;
+  max-width: 15ch;
+  line-height: 2;
+  color: var(--header);
+  font-weight: 600;
+}
+
+.s2Button{
+    background-color: var(--button);
+    color: var(--header);
+    border-radius: var(--radius-sm);
+    border: 0;
+    padding: var(--space-sm);
+    margin: var(--space-lg);
+    width: 100%;
+    max-width: 100px;
+    letter-spacing: 0.05rem;
+  }
+
+
+
+@media only screen and (max-width: 1200px) {
+  .header{
+    font-size: var(--font-size-tablet-lg);
+  }
+  .copyWrapper{
+    position: relative;
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header{
+    font-size: var(--font-size-tablet-lg);
+  }
+  .copyWrapper{
+    position: relative;
+    left: 3rem;
+  }
+  .cubeHolder{
+    left: 3rem;
+    bottom: -2rem;
+
+  }
+  .wrapper{
+    max-height: 75vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .wrapper{
+    flex-direction: column;
+  }
+  .copyWrapper{
+    left: 0;
+  }
+
+  .header{
+    font-size: var(--font-size-lg);
+    width: 15ch;
+  }
+}
+
+@media screen and (max-width: 414px){
+
+  .wrapper{
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100vh;
+  }
+  .copyWrapper{
+    left: 0;
+  }
+  .cubeHolder{
+    position: relative;
+    left: 5rem;
+    bottom: -1rem;
+    margin-top: -4.5rem;
+    overflow-y: hidden;
+  }
+  .header{
+    font-size: var(--font-size-lg);
+    width: 15ch;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .wrapper{
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  .copyWrapper{
+    left: 0;
+  }
+  .header{
+    font-size: var(--font-size-lg);
+    width: 15ch;
+  }
+  .cubeHolder{
+    position: relative;
+    left: 5rem;
+    bottom: -1rem;
+    margin-top: -4.5rem;
+    overflow-y: hidden;
+  }
+
+
+}
+
+@media only screen and (max-width: 325px){
+
+  .wrapper{
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  .copyWrapper{
+    left: 0;
+  }
+
+  .header{
+    font-size: var(--font-size-lg);
+    width: 15ch;
+  }
+
+  .cubeHolder{
+    position: relative;
+    left: 5rem;
+    bottom: -1rem;
+    margin-top: -4.5rem;
+    overflow-y: hidden;
+  }
+
+
+}
