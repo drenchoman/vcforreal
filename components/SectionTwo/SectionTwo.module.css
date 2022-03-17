@@ -24,8 +24,7 @@
 }
 
 .s2Button{
-  justify-self:center;
-  align-self: center;
+
 }
 
 
@@ -41,14 +40,17 @@
 
 .s2Button{
     background-color: var(--button);
-    color: var(--header);
+    color: var(--card);
     border-radius: var(--radius-sm);
     border: 0;
     padding: var(--space-sm);
     margin: var(--space-lg);
     width: 100%;
-    max-width: 100px;
+    max-width: 150px;
+    height: var(--button-height);
     letter-spacing: 0.05rem;
+    justify-self:center;
+    align-self: center;
   }
 
 

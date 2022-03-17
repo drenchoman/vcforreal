@@ -27,15 +27,18 @@
 }
 
 .exploreButton{
-  background-color: #0a7d51;
-  color: #ffe7a7;
+  background-color: var(--invertbutton);
+  color: var(--invertbuttontext);
   border-radius: var(--radius-sm);
   border: 0;
   padding: var(--space-sm);
   margin: var(--space-lg);
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
+  height: var(--button-height);
   letter-spacing: 0.05rem;
+  justify-self:center;
+  align-self: center;
 }
 
 .list{

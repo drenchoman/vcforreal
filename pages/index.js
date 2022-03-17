@@ -10,6 +10,7 @@ import logo from '../public/logos/logo-white.svg'
 import heart from '../public/images/heart3.svg'
 import girl from '../public/images/girl.jpg'
 import tupac from '../public/images/tupac.png'
+import arrowdown from '../public/svgs/arrowdown.svg'
 
 import insta from '../public/svgs/insta.svg'
 import pc from '../public/svgs/pc.svg'
@@ -43,7 +44,7 @@ const categories = [ {
 }]
 
 const shops =
-  { name: "Portage Store",
+  { name: "The Portage Store",
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -61,7 +62,7 @@ return (
  <Landing landingImage={girl} header="VINTAGE CLOTHING" subHeader="And so much more" />
  <SectionOne text="Connecting you to your local" categories={categories} />
  <SectionTwo tupac={tupac} text="Find your new favourite store" />
- <SectionThree text="Or add your own!" heart={heart} shops={shops} insta={insta} pc={pc} />
+ <SectionThree text="Or add your own store!" para="Customise your own card and be discovered!" heart={heart} shops={shops} insta={insta} pc={pc} arrow={arrowdown} />
 </main>
 </>
 )

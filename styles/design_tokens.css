@@ -11,7 +11,8 @@
   --main: #f3d2c1;
   --card: #fef6e4;
   --secondary: #8bd3dd;
-
+  --invertbutton: #742c22;
+  --invertbuttontext: #ffe747;
 
   --space-ss: 0.25rem;
   --space-sm: 0.5rem;
@@ -25,6 +26,7 @@
   --font-size-sm: 0.5rem;
   --font-size-md: 1rem;
   --font-size-mdl: 1.2rem;
+  --font-size-card: 1.5rem;
   --font-size-lg: 2rem;
 
   --font-size-tablet-lgr: 3.5rem;
@@ -38,6 +40,9 @@
 
   --radius-sm: 5px;
   --radius-lg: 30px;
+  --radius-lgr: 35px;
+
+  --button-height: 50px;
 
   --curtain-height: 98vh;
 }
