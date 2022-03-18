@@ -10,6 +10,7 @@ const LandingImage = ({landingImage}) => {
     alt="Indie girl with monie"
     objectFit="cover"
     objectPosition="center"
+    priority
       />
   </div>
 )
