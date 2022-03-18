@@ -13,12 +13,11 @@ const Navbar = (props) => {
 
   const handleClick = () => {
     setNavClicked(!navClicked)
-    console.log("hello world", navClicked)
   }
 
 
   return <nav className="navbar">
-    <NavbarLogo logo={props.logo} />
+    <NavbarLogo logo={props.logo} height={props.logoHeight} width={props.logoWidth} />
     <NavbarLinks links={props.links} heart={props.heart}  />
 
     <div className={styles.mobileNav}>

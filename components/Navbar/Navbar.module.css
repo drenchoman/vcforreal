@@ -7,6 +7,12 @@
 
 }
 
+.modalHeader{
+  font-size: var(--font-size-lg);
+  width: 15ch;
+  text-align: center;
+}
+
 .logo:hover{
   cursor: pointer;
 }
@@ -62,6 +68,8 @@
 
   animation-delay: 0.7s;
 }
+
+
 
 /* Remove z-index if I want to hide circle on close */
 .small{
@@ -146,34 +154,43 @@
 .mobileRegisterWrapper{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   transition: all 0.5s ease;
 
 
 }
 
+
 .loginOptions{
   transition: all 0.5s ease;
-  opacity: 0;
-  border-radius: var(--radius-sm);
   background-color: var(--button);
-  color: var(--header);
+  color: var(--card);
+  border-radius: var(--radius-sm);
   border: 0;
   padding: var(--space-sm);
-  margin: var(--space-md);
-  width: 100%;
+  margin: var(--space-lg);
+  opacity: 0;
+  width: 150px;
+  height: var(--button-height);
+  letter-spacing: 0.05rem;
   /* max-width: 75px; */
+}
+.blue{
+  background-color:  var(--secondary);
+  transition: all 0.5s ease;
 }
 /* Need to fix animations, cant reuse button component as it has opacity 0 */
 
 .storeButton{
-  border-radius: var(--radius-sm);
   background-color: var(--button);
-  color: var(--header);
+  color: var(--card);
+  border-radius: var(--radius-sm);
   border: 0;
   padding: var(--space-sm);
-  margin: var(--space-md);
-  width: 100%;
-  max-width: 75px;
+  margin: var(--space-lg);
+  width: 150px;
+  height: var(--button-height);
+  letter-spacing: 0.05rem;
 }
 
 .activeRegister{
@@ -300,7 +317,11 @@
     position: absolute;
     right: 6rem;
     top: 3rem;
-
+  }
+  .modalHeader{
+    font-size: var(--font-size-card);
+    width: 15ch;
+    text-align: center;
   }
 }
 
@@ -322,10 +343,11 @@
   .mobileLinksWrapper{
     display: flex;
   }
-
-  /* .mobileFav{
-    margin: 0 var(--space-sm);
-  } */
+  .modalHeader{
+    font-size: var(--font-size-card);
+    width: 15ch;
+    text-align: center;
+  }
   .small{
     position: absolute;
     right: 6rem;
@@ -354,9 +376,11 @@
     display: flex;
   }
 
-  /* .mobileFav{
-    margin: 0 var(--space-sm);
-  } */
+  .modalHeader{
+    font-size: var(--font-size-card);
+    width: 15ch;
+    text-align: center;
+  }
   .small{
     position: absolute;
     right: 6rem;
@@ -385,13 +409,14 @@
     display: flex;
   }
 
-  /* .mobileFav{
-    margin: 0 var(--space-sm);
-  } */
+  .modalHeader{
+    font-size: var(--font-size-card);
+    width: 15ch;
+    text-align: center;
+  }
   .small{
     position: absolute;
     right: 6rem;
     top: 3rem;
-
   }
 }

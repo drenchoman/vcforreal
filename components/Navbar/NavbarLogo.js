@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import styles from './Navbar.module.css'
 
-const NavbarLogo = (props) => {
-// TODO: Turn logo into link using Link and A href 
+const NavbarLogo = ({logo, width, height}) => {
+// TODO: Turn logo into link using Link and A href
   return (
   <div className={styles.logo}>
     <Image
-    src = {props.logo}
+    src = {logo}
     alt="Vintage Clothing Logo"
-    width={100}
-    height={100}
+    width={width}
+    height={height}
     />
   </div>
 )

@@ -11,20 +11,19 @@
   display: flex;
   max-height: 80vh;
   height: 100%;
+  margin-top: var(--space-lg);
   overflow: hidden;
+
 }
 .copyWrapper{
   justify-self:center;
   align-self: center;
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   position: relative;
   left: 3rem;
-}
-
-.s2Button{
-
 }
 
 
@@ -32,10 +31,25 @@
   font-size: var(--font-size-tablet-lgr);
   text-align: center;
   width: 100%;
+  margin: 0;
   max-width: 15ch;
   line-height: 2;
   color: var(--header);
   font-weight: 600;
+  opacity: 0;
+}
+.headerInView{
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+.text{
+  opacity: 0;
+}
+.textInView{
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transition-delay: 0.4s;
 }
 
 .s2Button{
@@ -87,6 +101,8 @@
 @media screen and (max-width: 720px){
   .wrapper{
     flex-direction: column;
+    margin-top: var(--space-lg);
+
   }
   .copyWrapper{
     left: 0;
@@ -95,6 +111,12 @@
   .header{
     font-size: var(--font-size-lg);
     width: 15ch;
+  }
+  .text{
+    text-align: center;
+    width: 100%;
+    margin: var(--space-md) auto;
+    max-width: 22ch;
   }
 }
 
@@ -103,6 +125,7 @@
   .wrapper{
     flex-direction: column;
     overflow: hidden;
+    margin-top: var(--space-lg);
     max-height: 100vh;
   }
   .copyWrapper{
@@ -118,6 +141,12 @@
   .header{
     font-size: var(--font-size-lg);
     width: 15ch;
+  }
+  .text{
+    text-align: center;
+    width: 100%;
+    margin: var(--space-md) auto;
+    max-width: 22ch;
   }
 }
 
@@ -126,6 +155,7 @@
   .wrapper{
     flex-direction: column;
     max-height: 100vh;
+    margin-top: var(--space-lg);
   }
   .copyWrapper{
     left: 0;
@@ -140,6 +170,12 @@
     bottom: -1rem;
     margin-top: -4.5rem;
     overflow-y: hidden;
+  }
+  .text{
+    text-align: center;
+    width: 100%;
+    margin: var(--space-md) auto;
+    max-width: 22ch;
   }
 
 
@@ -150,9 +186,11 @@
   .wrapper{
     flex-direction: column;
     max-height: 100vh;
+    margin-top: var(--space-lg);
   }
   .copyWrapper{
     left: 0;
+    text-align: center;
   }
 
   .header{
@@ -166,6 +204,12 @@
     bottom: -1rem;
     margin-top: -4.5rem;
     overflow-y: hidden;
+  }
+  .text{
+    text-align: center;
+    width: 100%;
+    margin: var(--space-md) auto;
+    max-width: 22ch;
   }
 
 

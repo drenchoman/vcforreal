@@ -15,7 +15,7 @@ const NavbarFav = ({heart, className}) => {
     {heartClicked &&
       // Need to create seperate component for this container
     <div className={styles.modalContainer}>
-      <h2> Your favourite stores </h2>
+      <h2 className={styles.modalHeader}> Your favourite stores </h2>
       <button className={styles.storeButton}>Explore</button>
     </div>
   }

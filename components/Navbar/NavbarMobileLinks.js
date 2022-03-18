@@ -12,7 +12,7 @@ const NavbarMobileLinks = ({links, navClicked}) => {
         <hr/>
         <div className={styles.mobileRegisterWrapper}>
 
-          <button className={`${styles.loginOptions} ${navClicked ? styles.activeRegister : ""}`}>Login</button>
+          <button className={`${styles.loginOptions} ${styles.blue} ${navClicked ? styles.activeRegister : ""}`}>Login</button>
           <button className={`${styles.loginOptions} ${navClicked ? styles.activeRegister2 : ""}`}>Register</button>
           </div>
           <hr/>

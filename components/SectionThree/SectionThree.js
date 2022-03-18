@@ -8,7 +8,9 @@ const SectionThree = ({text, para, heart, shops, insta, pc, arrow}) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.innerWrapper}>
+
         <S3Copy text={text} arrow={arrow} para={para} />
+
         <div className={styles.cardWrapper}>
           <S3Card heart={heart} shops={shops} insta={insta} pc={pc} />
           <S3Join cta="Join Now!"/>
