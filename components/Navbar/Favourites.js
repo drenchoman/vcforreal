@@ -6,7 +6,7 @@ const Favourites = ({testData}) => {
   return (
     <ul className={styles.favouriteWrapper}>
       {testData.map(test =>
-        <div className={styles.favouriteItem}>
+        <div key={key={test.name}} className={styles.favouriteItem}>
           <div className={styles.favouriteImage}>
             <Image
               layout="fill"
@@ -17,7 +17,7 @@ const Favourites = ({testData}) => {
               />
           </div>
           <div className={styles.favName}>
-            <li key={test.name}>
+            <li>
             {test.name}
             </li>
           </div>

@@ -45,6 +45,7 @@ const [heartActive, setHeartActive] = useState(false);
                   width={30}
                   height={30}
                   src={insta}
+                  alt=""
                 />
               </div> }
               {shops.website && <div>
@@ -52,6 +53,7 @@ const [heartActive, setHeartActive] = useState(false);
                   width={30}
                   height={30}
                   src={pc}
+                  alt=""
                 />
               </div>}
           </div>
