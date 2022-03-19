@@ -21,7 +21,7 @@ const Navbar = (props) => {
     <NavbarLinks links={props.links} heart={props.heart}  />
 
     <div className={styles.mobileNav}>
-    <NavbarFav heart={props.heart} className={styles.mobileFav} />
+    <NavbarFav heart={props.heart} className={styles.mobileFav} insta={props.insta} pc={props.pc}/>
     <NavbarBurger handleClick={handleClick} navClicked={navClicked} />
     </div>
     <NavbarMobileLinks links={props.links} navClicked={navClicked} />

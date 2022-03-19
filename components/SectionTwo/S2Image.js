@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 const S2Image = ({tupac}) => {
   return(
+
   <div className={styles.cubeHolder}>
     <Image
       src={tupac}
@@ -11,6 +12,7 @@ const S2Image = ({tupac}) => {
       alt="Tupac girl"
     />
   </div>
+
 )
 }
 

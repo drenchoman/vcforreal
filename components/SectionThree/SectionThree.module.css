@@ -48,8 +48,20 @@
   line-height: 1.5;
   color: var(--header);
   font-weight: 600;
+  transform: translateY(-50%);
+  opacity: 0;
 
 }
+
+.headerInView{
+  transform: translate(0);
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+}
+
 
 .cardWrapper{
   border-radius: var(--radius-sm);
@@ -66,8 +78,20 @@
   color: var(--header);
   width: 30ch;
   text-align: center;
+  opacity: 0;
+  transform: translateY(-50%);
   /* padding:var(--space-md) 0; */
 }
+.cardHeaderInView{
+  opacity: 1;
+  transform: translate(0);
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  transition-delay: 0.3s;
+}
+
 
 .card{
   min-height: 240px;
@@ -291,9 +315,9 @@ border-radius: var(--radius-lg);
   box-shadow:  -0.5px 1px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   -webkit-transition: all 0.6s ease-in-out;
-      -o-transition: all 0.6s ease-in-out ;
-      -moz-transition: all 0.6s ease-in-out;
-      transition: all 0.6s ease-in-out ;
+  -o-transition: all 0.6s ease-in-out ;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out ;
 
   position: absolute;
   filter: grayscale();
@@ -333,13 +357,10 @@ border-radius: var(--radius-lg);
   transform: rotate(-45deg) scale(1.1);
 
   -webkit-transition: all ease-in-out 0.6s;
-      -moz-transition: all ease-in-out 0.6s;
-      -o-transition: all ease-in-out 0.6s ;
-      transition: all ease-in-out 0.6s ;
-
-
-        /* box-shadow: -5px 0.5px 5px rgba(255, 232, 232, 0.1); */
-        box-shadow:  -3px 0.5px 5px rgba(0, 0, 0, 0.2)
+  -moz-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s ;
+  transition: all ease-in-out 0.6s ;
+  box-shadow:  -3px 0.5px 5px rgba(0, 0, 0, 0.2)
 
 }
 

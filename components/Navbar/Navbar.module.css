@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.modalButtonContainer{
+  display: flex;
+}
+
 .logo:hover{
   cursor: pointer;
 }
@@ -60,12 +64,12 @@
 .modalContainer{
   display: flex;
   margin: var(--space-xl) auto;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   animation: fadein 1s ease forwards;
   opacity: 0;
-
+  height: 100%;
   animation-delay: 0.7s;
 }
 
@@ -84,6 +88,8 @@
     opacity: 0.75;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     overflow: hidden;
     z-index: 5;
 
@@ -111,6 +117,8 @@
   background: var(--main);
   transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
   opacity: 1;
   position: absolute;
   overflow: hidden;
@@ -127,7 +135,10 @@
   right: -250px;
   z-index: 8;
   display: none;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
 }
@@ -155,14 +166,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 
 
 }
 
 
 .loginOptions{
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   background-color: var(--button);
   color: var(--card);
   border-radius: var(--radius-sm);
@@ -195,14 +212,20 @@
 
 .activeRegister{
   opacity: 1;
-  transition: all ease 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition-delay: 0.5s;
   transition-duration: 0.5s;
 }
 
 .activeRegister2{
   opacity: 1;
-  transition: all ease 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition-delay: var(--delay2)
 
 }
@@ -210,7 +233,10 @@
 .mobileListItem{
   opacity: 0;
   transform:rotate(-90deg);
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   margin: var(--space-lg) 0;
   padding: var(--space-md) var(--space-md);
   background-color: var(--card);
@@ -222,13 +248,19 @@
 .activeListItem{
   opacity: 1;
   transform: rotate(0);
-  transition: all ease;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition-duration: 0.5s;
 }
 
 .active {
   right: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 
 }
 
@@ -243,6 +275,9 @@
 
 .linkItems{
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  -webkit-transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   box-shadow: inset 0 0 0 0 var(--main);
 }
 
@@ -264,7 +299,10 @@
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease;
-  margin-right:
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+
 }
 .burger div{
   height: 4px;
@@ -272,11 +310,17 @@
   background-color: var(--header);
   /* position: absolute; */
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 .activeBurger{
   border-radius:50%;
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   z-index: 10;
   /* border-color: var(--button); */
 }
@@ -284,14 +328,23 @@
 .firstActive{
   transform: translateY(8px) rotate(45deg);
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .secondActive{
   opacity: 0;
   transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .thirdActive{
   transform: translateY(-9px) rotate(-45deg);
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 
@@ -348,6 +401,7 @@
     width: 15ch;
     text-align: center;
   }
+
   .small{
     position: absolute;
     right: 6rem;
@@ -414,6 +468,7 @@
     width: 15ch;
     text-align: center;
   }
+
   .small{
     position: absolute;
     right: 6rem;

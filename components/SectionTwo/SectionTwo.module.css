@@ -7,6 +7,8 @@
 
 }
 
+
+
 .wrapper{
   display: flex;
   max-height: 80vh;
@@ -41,7 +43,10 @@
 .headerInView{
   opacity: 1;
   transition: 1s ease-in-out;
-  transition-delay: 0.2s;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: all 1s ease-in-out ;
+  -moz-transition: all 1s ease-in-out;
+
 }
 .text{
   opacity: 0;
@@ -49,6 +54,9 @@
 .textInView{
   opacity: 1;
   transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: all 1s ease-in-out ;
+  -moz-transition: all 1s ease-in-out;
   transition-delay: 0.4s;
 }
 

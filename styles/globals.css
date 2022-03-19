@@ -22,6 +22,9 @@ button{
   font-family: Poppins;
   font-weight: 600;
 }
+button:hover{
+  cursor: pointer;
+}
 
 h1 {
   color: var(--header);

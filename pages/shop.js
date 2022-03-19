@@ -2,7 +2,7 @@ import ShopList from '../components/ShopList'
 
 const shops = [
   { name: "Portage Store",
-    description: "A partially fermented tea.",
+    description: "An amazing store",
     image: "/images/1.jpg"
   },
     {

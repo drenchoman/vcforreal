@@ -6,6 +6,16 @@
   line-height: 2;
   color: var(--main);
   font-weight: 600;
+  opacity: 0;
+}
+
+.headerInView{
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out ;
+  -moz-transition: all 0.8s ease-in-out;
+
 }
 
 .listOptions{
@@ -64,6 +74,15 @@ text-align: center;
 }
 .listImage{
   margin: var(--space-sm);
+  transform: scale(0.8);
+}
+
+.listImageInView{
+  transform: scale(1.2);
+  transition: 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out ;
+  -moz-transition: all 0.6s ease-in-out;
 }
 
 
