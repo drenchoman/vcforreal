@@ -5,7 +5,7 @@ const Categories = ({categories}) => {
   return (
     <ul className={styles.cardContainer}>
     {categories.map(cat =>
-      <CategoryItem key={cat.name} cat={cat} />
+      <CategoryItem cat={cat} />
     )}
     </ul>
   )

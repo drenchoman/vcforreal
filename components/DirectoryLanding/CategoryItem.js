@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const CategoryItem = ({cat}) => {
   return (
-    <div className={styles.itemCard}>
+    <div key={cat.name} className={styles.itemCard}>
       <div className={styles.buttonHeaderWrapper}>
         <div>
           <li className={styles.itemHeader}>
