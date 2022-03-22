@@ -1,0 +1,224 @@
+.card{
+  min-height: 240px;
+  position: relative;
+  width: 325px;
+  max-height: 475px;
+  border-radius: var(--radius-lgr);
+  box-shadow: 0 10px 8px rgb(154 160 185 / 5%), 0 6px 8px rgb(166 173 201 / 20%);
+  margin: var(--space-sm);
+  background-image: url('../../public/svgs/ssspot.svg');
+  margin: var(--space-sm) auto;
+}
+
+
+.cardTop{
+  max-width: 325px;
+  background-image: url('../../public/svgs/cardtop.svg');
+  height: 115px;
+  margin: auto 0;
+  border-radius:var(--radius-lg);
+  border: 1px solid var(--header);
+  display: flex;
+      box-shadow: 0 3px 2px rgb(154 160 185 / 5%), 0 3px 2px rgb(166 173 201 / 20%);
+}
+
+.cardName{
+  text-align: left;
+  color:var(--main);
+  width: 270px;
+  height: 115px;
+  display: flex;
+  padding-left: 2.25rem;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardNameText{
+  color:var(--card);
+  font-size: var(--font-size-card);
+  font-weight: 600;
+}
+
+
+.heartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 50px;
+  border-radius: var(--radius-lg);
+  margin: 0 var(--space-lg);
+  padding-top: var(--space-md);
+  transform: rotate(-45deg);
+}
+
+.cardMiddle{
+  max-width: 325px;
+  text-align: center;
+}
+
+.cardRegion{
+  font-size: 12px;
+    font-weight: 700;
+    color: #15202b;
+    padding: 0.5rem 0 0.25rem 0;
+    margin: 0 0.5rem;
+    border-radius: var(--radius-lg);
+
+
+}
+
+.cardDescription{
+  margin: 0.25rem auto;
+border-radius: var(--radius-lg);
+padding: 0.25rem 1rem;
+width: 275px;
+background-color: var(--card);
+color: var(--header);
+}
+
+.cardBottom{
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 1rem;
+  padding: 0 0 1rem;
+  min-height: 150px;
+  align-items: center;
+
+}
+
+.linksContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--card);
+  padding: var(--space-sm);
+  width: 75px;
+  height: 100%;
+  margin: 0 var(--space-sm);
+  border-radius: var(--radius-lg);
+  box-shadow: 2px 2px 3px rgb(154 160 185 / 10%), 0 -2px 5px rgb(166 173 201 / 10%);
+}
+
+.linksHeader{
+  margin: var(--space-icon) 0;
+}
+.visitIcon{
+  padding: var(--space-icon);
+  margin: auto;
+}
+
+
+.grid{
+  display: grid;
+  max-height: 220px;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  gap: 5px;
+  max-width: inherit;
+}
+.cardImagesContainer{
+
+}
+
+.linksDiv{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  gap: var(--space-icon);
+  height: 100%;
+  width: 100%;
+}
+
+
+.visitIcon:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* HEART BUTTON */
+
+.favourite {
+  background-image: radial-gradient(closest-side at 60% 55%, var(--secondary), #A8E7E9, var(--secondary));
+  display:inline-block;
+  height: 30px;
+  margin: 0 10px;
+  width: 30px;
+  opacity: 1;
+  padding-right: var(--space-md);
+  box-shadow:  -0.5px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out ;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out ;
+
+  position: absolute;
+  filter: grayscale();
+}
+
+
+
+.favourite:before,
+.favourite:after {
+  content: "";
+  background-image: radial-gradient(closest-side at 60% 55%, var(--secondary), #A8E7E9, var(--secondary));
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  box-shadow: 3px 0.5px 10px rgba(128, 128, 128, 0.1 );
+}
+
+.favourite:before {
+  top: -15px;
+  left: 0;
+}
+
+.favourite:after {
+  left: 15px;
+  top: 0;
+}
+
+.favouriteActive {
+  background-image: radial-gradient(closest-side at 60% 55%, var(--secondary), #A8E7E9, var(--secondary));
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transform: scale(1.2);
+
+  -webkit-transition: all ease-in-out 0.6s;
+  -moz-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s ;
+  transition: all ease-in-out 0.6s ;
+  box-shadow:  -3px 0.5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.favouriteActive:before,
+.favouriteActive:after {
+  content: "";
+  background-image: radial-gradient(closest-side at 60% 55%, var(--secondary), #A8E7E9, var(--secondary));
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  /* box-shadow: 5px 0.5px 5px rgba(255, 232, 232, 0.1)  ; */
+}
+
+.favouriteActive:before {
+  top: -15px;
+  left: 0;
+}
+
+.favouriteActive:after {
+  left: 15px;
+  top: 0;
+}
