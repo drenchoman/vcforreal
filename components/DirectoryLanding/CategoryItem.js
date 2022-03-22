@@ -19,7 +19,6 @@ const CategoryItem = ({cat}) => {
         <Image
         src={cat.image}
         layout="fill"
-        layout="fill"
         objectFit="cover"
         objectPosition="center"
         alt=""
