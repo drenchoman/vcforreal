@@ -240,7 +240,7 @@ background-color: var(--card);
   margin: 0 10px;
   width: 30px;
   opacity: 1;
-
+  right: 0.5rem;
   box-shadow:  -0.5px 1px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   -webkit-transition: all 0.6s ease-in-out;
@@ -283,6 +283,7 @@ background-color: var(--card);
   cursor: pointer;
   transform: scale(1.2);
   position: absolute;
+  right: 0.5rem;
   -webkit-transition: all ease-in-out 0.6s;
   -moz-transition: all ease-in-out 0.6s;
   -o-transition: all ease-in-out 0.6s ;
