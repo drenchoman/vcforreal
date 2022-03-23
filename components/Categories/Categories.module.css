@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .innerWrapper{
@@ -18,7 +19,7 @@
 .categoryGrid{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(325px, 1fr));
-  grid-gap: var(--space-md);
+  grid-gap: var(--space-lg);
   width: 100%;
   margin: var(--space-md) 0;
   padding: var(--space-md) var(--space-xl-card);
