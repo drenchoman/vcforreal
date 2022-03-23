@@ -7,8 +7,8 @@ const NavbarMobileLinks = ({links, navClicked}) => {
       <div className={styles.mobileLinksCard}>
         <ul className={styles.mobileLinksList}>
           {links.map(link =>
-            <Link href={link.path}>
-            <li className={`${styles.mobileListItem} ${navClicked ? styles.activeListItem : ""}`} key={link.name}><a>{link.name}</a></li>
+            <Link key={link.name} href={link.path} passHref>
+            <li className={`${styles.mobileListItem} ${navClicked ? styles.activeListItem : ""}`} ><a>{link.name}</a></li>
             </Link>
           )}
         </ul>

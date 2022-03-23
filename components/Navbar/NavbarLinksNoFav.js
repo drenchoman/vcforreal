@@ -10,8 +10,8 @@ const NavbarLinks = ({className, links}) => {
     <>
       <ul className={className}>
         {links.map(link =>
-          <Link href={link.path}>
-            <li className={styles.linkItems} key={link.name}><a>{link.name}</a></li>
+          <Link key={link.name} href={link.path} passHref >
+            <li className={styles.linkItems}><a>{link.name}</a></li>
           </Link>
           )}
 
