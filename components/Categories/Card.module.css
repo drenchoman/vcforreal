@@ -3,7 +3,7 @@
 
   width: 325px;
   height: 100%;
-  max-height: 5750px;
+  max-height: 575px;
   border-radius: var(--radius-lgr);
   box-shadow: 0 10px 8px rgb(154 160 185 / 5%), 0 6px 8px rgb(166 173 201 / 20%);
   margin: var(--space-sm);
