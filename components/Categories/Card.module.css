@@ -67,6 +67,7 @@
   align-items: center;
   flex-direction: column;
   max-height: 170px;
+
 }
 
 .smallInfo{
@@ -141,6 +142,7 @@ color: var(--card);
   justify-content: center;
   max-height: 300px;
   margin: var(--space-ss) var(--space-sm);
+  /* height: 100%; */
 
   /* max-height: 250px; */
 
@@ -275,6 +277,7 @@ color: var(--card);
   background-image: radial-gradient(closest-side at 60% 55%, var(--secondary), #A8E7E9, var(--secondary));
   height: 30px;
   width: 30px;
+  margin: 0 10px;
   cursor: pointer;
   transform: scale(1.2);
 
