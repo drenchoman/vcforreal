@@ -204,6 +204,9 @@ color: var(--card);
   margin: 1px;
 }
 
+.imageContainer:hover{
+  transform: scale(1.02);
+}
 
 
 .cardImagesContainer{
@@ -214,7 +217,6 @@ color: var(--card);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   gap: var(--space-md);
-  height: 100%;
   width: 100%;
 }
 
