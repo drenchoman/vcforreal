@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  justify-content: center;
+  align-items: center;
   height: 100%;
   position: relative;
 }
@@ -14,6 +15,11 @@
   margin: var(--space-md) 0;
   background-color: var(--main);
   width: inherit;
+}
+
+.cGrid{
+  display: grid;
+  width: 100%;
 }
 
 .categoryGrid{
