@@ -189,7 +189,7 @@ export default function Directory() {
     <>
       <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
       <main className="lockup">
-        <Categories header="Opshops" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
+        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
         <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
         </main>

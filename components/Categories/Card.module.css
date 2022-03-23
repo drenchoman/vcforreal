@@ -1,6 +1,6 @@
 .card{
   min-height: 240px;
-  position: relative;
+
   width: 325px;
   height: 100%;
   max-height: 5750px;
@@ -69,7 +69,7 @@
   max-height: 170px;
 }
 
-.cardUpdated{
+.smallInfo{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -78,13 +78,28 @@
   margin: var(--space-ss) 0 var(--space-icon) 0;
 }
 
-.cardLastUpdated{
+.timeInfo{
   font-size: 12px;
   font-weight: 400;
   color: var(--header);
-  padding: var(--space-icon) var(--space-ss);
+  padding: var(--space-icon) var(--space-icon);
   background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
   border-radius: var(--space-sm);
+  box-shadow: 2px 2px 2px rgb(154 160 185 / 10%), 0 -2px 2.5px rgb(166 173 201 / 10%);
+}
+.timeInfo > * {
+  margin: 0 var(--space-icon);
+}
+
+.refreshImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardRegion{
@@ -94,6 +109,8 @@
 padding: var(--space-icon) var(--space-ss);
   border-radius: var(--space-sm);
   background-color: var(--main);
+  box-shadow: 2px 2px 2px rgb(154 160 185 / 10%), 0 -2px 2.5px rgb(166 173 201 / 10%);
+
 
 
 
@@ -101,11 +118,13 @@ padding: var(--space-icon) var(--space-ss);
 
 .cardDescription{
 border-radius: var(--radius-sm);
-width: 325px;
+width: 100%;
+max-width: 275px;
 text-align: center;
 margin: var(--space-ss) 0;
 padding: var(--space-ss) 0;
 color: var(--card);
+/* box-shadow: 2px 2px 2px rgb(154 160 185 / 10%), 0 -2px 2.5px rgb(166 173 201 / 10%); */
 }
 
 .cardDescription > p{
@@ -118,7 +137,7 @@ color: var(--card);
   display: flex;
   flex-direction: row;
   min-height: 150px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   max-height: 300px;
   margin: var(--space-ss) var(--space-sm);
@@ -132,14 +151,14 @@ color: var(--card);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--main);
+  /* background-color: var(--main); */
   padding: var(--space-ss);
   width: 20%;
 
   margin: var(--space-sm);
     margin-top: 0;
   border-radius: var(--radius-sm);
-  box-shadow: 2px 2px 3px rgb(154 160 185 / 10%), 0 -2px 5px rgb(166 173 201 / 10%);
+  box-shadow: 4px 4px 4px rgb(154 160 185 / 10%), 0 -4px 5px rgb(166 173 201 / 10%);
 }
 
 .linksHeader{
@@ -149,8 +168,12 @@ color: var(--card);
 
 }
 .visitIcon{
-  padding: var(--space-icon);
-  margin: auto;
+  padding: var(--space-ss) var(--space-icon);
+  margin: var(--space-icon);
+  background-color: var(--button);
+  display: flex;
+  justify-content: center;
+  border-radius: var(--radius-lg);
 }
 
 
@@ -165,9 +188,10 @@ color: var(--card);
   height: 100%;
   margin: 0 auto;
   list-style: none;
-
   max-width: inherit;
   width: 100%;
+  /* box-shadow: 4px 4px 4px rgb(154 160 185 / 10%), 0 -4px 5px rgb(166 173 201 / 10%); */
+
 
 }
 
@@ -187,7 +211,7 @@ color: var(--card);
 .linksDiv{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
-  gap: var(--space-icon);
+  gap: var(--space-md);
   height: 100%;
   width: 100%;
 }

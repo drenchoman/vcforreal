@@ -190,15 +190,15 @@ export default function Directory() {
       <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
       <main className="lockup">
         <DirectoryLanding categories={categories} subHeader="I'm looking for..." />
-        <Categories header="Thrift & Vintage" subHeader="Find your new favourite Thrift store." dummyShops={dummyShops} catImage={thriftandvintage} />
+        <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." dummyShops={dummyShops} catImage={thriftandvintage} />
 
-        <Categories header="Footwear" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
+        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
 
-        <Categories header="Jewellery" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
+        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
 
-        <Categories header="Upcycling" subHeader="Shop Sustainably" dummyShops={dummyShops} catImage={upcycled} />
+        <Categories header="UPCYCLING" subHeader="Shop Sustainably" dummyShops={dummyShops} catImage={upcycled} />
 
-        <Categories header="Opshops" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
+        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
 
         <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
         </main>

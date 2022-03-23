@@ -6,8 +6,8 @@ const CategoryImage = ({catImage}) => {
     <div className={styles.imageWrapper}>
       <Image
       src={catImage}
-      width={325}
-      height={400}
+      width={275}
+      height={350}
       alt=""
       />
     </div>

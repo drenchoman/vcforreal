@@ -189,7 +189,7 @@ export default function Directory() {
     <>
       <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
       <main className="lockup">
-        <Categories header="Jewellery" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
+        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
         <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
         </main>

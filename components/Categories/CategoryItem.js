@@ -2,6 +2,7 @@ import styles from './Card.module.css'
 import {useState} from 'react'
 import insta from '../../public/svgs/insta.svg'
 import pc from '../../public/svgs/pc.svg'
+import refresh from '../../public/svgs/refresh.svg'
 import Image from 'next/image'
 
 const CategoryItem = ({shop}) => {
@@ -20,9 +21,12 @@ const CategoryItem = ({shop}) => {
         </div>
       </div>
       <div className={styles.cardMiddle}>
-        <div className={styles.cardUpdated}>
-          <div>
-            <span className={styles.cardLastUpdated}>Updated: 2d ago</span>
+        <div className={styles.smallInfo}>
+          <div className={styles.timeInfo}>
+            <div className={styles.refreshImage}>
+              <Image src={refresh} width={20} height={20} alt=""/>
+            </div>
+              <span>2d ago </span>
           </div>
           <div>
             <span className={styles.cardRegion}>{shop.region}</span>

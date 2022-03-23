@@ -188,7 +188,7 @@ export default function Directory() {
     <>
       <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
       <main className="lockup">
-        <Categories header="Footwear" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
+        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
         <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
         </main>
