@@ -10,7 +10,6 @@ const CategoryItem = ({shop}) => {
   const [heartActive, setHeartActive] = useState(false);
   return (
     <li className={styles.card}>
-
       <div className={styles.cardTop}>
         <div className={styles.cardName}>
           <h2 className={styles.cardNameText}>{shop.name}</h2>

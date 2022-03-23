@@ -97,7 +97,7 @@ const dummyShops = [
   },
   { name: "The Portage Store",
     region: "Auckland",
-    description: "The best thing since sliced bread. Hottest vintage shipping from Auckland to all our whanau across Aotearoa",
+    description: "Hottest vintage shipping from Auckland to all our whanau across Aotearoa",
     instagram: true,
     website: true,
     trademe: true,
@@ -134,7 +134,7 @@ const dummyShops = [
   {
     name: "Vintage Friends",
     region: "Wellington",
-    description: "Vintage is love, vintage is life",
+    description: "The best thing since sliced bread.",
     instagram: false,
     website: true,
     trademe: false,
