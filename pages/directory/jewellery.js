@@ -1,27 +1,27 @@
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
-import DirectoryLanding from '../components/DirectoryLanding'
-import Categories from '../components/Categories'
-import Footer from '../components/Footer'
-import Landing from '../components/Landing'
-import styles from '../styles/Home.module.css'
+import Navbar from '../../components/Navbar'
+import DirectoryLanding from '../../components/DirectoryLanding'
+import Categories from '../../components/Categories'
+import Footer from '../../components/Footer'
+import Landing from '../../components/Landing'
+import styles from '../../styles/Home.module.css'
 
-import dummyImage1 from '../public/images/1.jpg'
-import dummyImage2 from '../public/images/2.jpg'
-import dummyImage3 from '../public/images/3.jpg'
-import dummyImage4 from '../public/images/4.jpg'
-import dummyImage5 from '../public/images/5.jpg'
-import dummyImage6 from '../public/images/g1.jpg'
+import dummyImage1 from '../../public/images/1.jpg'
+import dummyImage2 from '../../public/images/2.jpg'
+import dummyImage3 from '../../public/images/3.jpg'
+import dummyImage4 from '../../public/images/4.jpg'
+import dummyImage5 from '../../public/images/5.jpg'
+import dummyImage6 from '../../public/images/g1.jpg'
 
-import logo from '../public/logos/logo-white.svg'
-import heart from '../public/images/heart3.svg'
+import logo from '../../public/logos/logo-white.svg'
+import heart from '../../public/images/heart3.svg'
 
 
-import thriftandvintage from '../public/images/categoryimages/thrift.jpg'
-import jewel from '../public/images/categoryimages/jewel.jpg'
-import sneakers from '../public/images/categoryimages/sneakers.jpg'
-import upcycled from '../public/images/categoryimages/upcycled.jpg'
-import opshops from '../public/images/categoryimages/opshops.jpg'
+import thriftandvintage from '../../public/images/categoryimages/thrift.jpg'
+import jewel from '../../public/images/categoryimages/jewel.jpg'
+import sneakers from '../../public/images/categoryimages/sneakers.jpg'
+import upcycled from '../../public/images/categoryimages/upcycled.jpg'
+import opshops from '../../public/images/categoryimages/opshops.jpg'
 
 const links = [ {
   name: "About",
@@ -189,17 +189,8 @@ export default function Directory() {
     <>
       <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
       <main className="lockup">
-        <DirectoryLanding categories={categories} subHeader="I'm looking for..." />
-        <Categories header="Thrift & Vintage" subHeader="Find your new favourite Thrift store." dummyShops={dummyShops} catImage={thriftandvintage} />
-
-        <Categories header="Footwear" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
-
         <Categories header="Jewellery" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
-
-        <Categories header="Upcycling" subHeader="Shop Sustainably" dummyShops={dummyShops} catImage={upcycled} />
-
-        <Categories header="Opshops" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
-
+        <DirectoryLanding categories={categories} subHeader="I want more..." />
         <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
         </main>
     </>

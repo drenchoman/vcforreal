@@ -1,7 +1,7 @@
 import styles from './Navbar.module.css'
 import Image from 'next/image'
 import NavbarFav from './NavbarFav'
-
+import Link from 'next/link'
 
 const NavbarLinks = ({links, heart}) => {
 
@@ -10,9 +10,9 @@ const NavbarLinks = ({links, heart}) => {
     <>
       <ul className={styles.navLinks}>
         {links.map(link =>
-
-            <li className={styles.linkItems} key={link}>{link}</li>
-
+          <Link href={link.path}>
+            <li className={styles.linkItems} key={link.name}><a>{link.name}</a></li>
+          </Link>
           )}
 
 

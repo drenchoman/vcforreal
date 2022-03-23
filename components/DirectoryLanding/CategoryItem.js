@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 const CategoryItem = ({cat}) => {
   return (
-    <div className={styles.itemCard}>
+    <li className={styles.itemCard}>
       <div className={styles.buttonHeaderWrapper}>
         <div>
-          <li className={styles.itemHeader}>
+          <h2 className={styles.itemHeader}>
             {cat.name}
-          </li>
+          </h2>
         </div>
         <Link href={cat.path}>
           <button className={styles.itemButton}><a>Find</a></button>
@@ -24,7 +24,7 @@ const CategoryItem = ({cat}) => {
         alt=""
         />
       </div>
-    </div>
+    </li>
   )
 }
 

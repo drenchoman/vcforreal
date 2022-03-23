@@ -20,8 +20,13 @@ const CategoryItem = ({shop}) => {
         </div>
       </div>
       <div className={styles.cardMiddle}>
-        <div className={styles.cardRegion}>
-          <span>{shop.region}</span>
+        <div className={styles.cardUpdated}>
+          <div>
+            <span className={styles.cardLastUpdated}>Updated: 2d ago</span>
+          </div>
+          <div>
+            <span className={styles.cardRegion}>{shop.region}</span>
+          </div>
         </div>
         <div className={styles.cardDescription}>
           <p>{shop.description}</p>
@@ -68,38 +73,47 @@ const CategoryItem = ({shop}) => {
         </div>
 
           <ul className={styles.grid}>
-            <li>
+            <li className={styles.imageContainer}>
+
               <Image
-                width={150}
-                height={150}
+                width={115}
+                height={115}
                 alt=""
                 src={shop.images[0]}
               />
+
             </li>
-            <li>
+            <li className={styles.imageContainer}>
+
             <Image
-              width={150}
-              height={150}
+              width={115}
+              height={115}
               alt=""
               src={shop.images[1]}
             />
+
             </li>
-            <li>
+            <li className={styles.imageContainer}>
+
             <Image
-              width={150}
-              height={150}
+              width={115}
+              height={115}
               alt=""
               src={shop.images[2]}
             />
+
             </li>
-            <li>
+            <li className={styles.imageContainer}>
+
             <Image
-              width={150}
-              height={150}
+              width={115}
+              height={115}
               alt=""
               src={shop.images[3]}
             />
+
             </li>
+
           </ul>
 
       </div>

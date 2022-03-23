@@ -1,5 +1,6 @@
 import styles from './SectionFour.module.css'
 import S4Image from './S4Image'
+import Link from 'next/link'
 import { InView } from 'react-intersection-observer'
 
 const SectionFour = ({thriftPic1, thriftPic2}) => {
@@ -19,7 +20,9 @@ const SectionFour = ({thriftPic1, thriftPic2}) => {
       <p className={styles.ctaText}>Plan your route and find some bargains!</p>
         <S4Image thriftPic={thriftPic2} className={styles.imageThrift2} />
       </div>
-      <button className={styles.ctaButton}>Explore</button>
+      <Link href={'/directory/opshops'}>
+        <button className={styles.ctaButton}><a>Explore</a></button>
+      </Link>
     </div>
   )}
   </InView>

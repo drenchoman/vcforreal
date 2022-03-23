@@ -105,7 +105,7 @@
   }
   .buttonHeaderWrapper{
     flex-direction: column;
-    top: 1rem;
+    top: 3rem;
   }
 
   .subHeader{
@@ -126,7 +126,7 @@
   }
   .buttonHeaderWrapper{
     flex-direction: column;
-    top: 1rem;
+    top: 3rem;
   }
 
   .subHeader{
@@ -148,7 +148,7 @@
   }
   .buttonHeaderWrapper{
     flex-direction: column;
-    top: 1rem;
+    top: 3rem;
   }
 
   .subHeader{
@@ -168,7 +168,7 @@
   }
   .buttonHeaderWrapper{
     flex-direction: column;
-    top: 1rem;
+    top: 3rem;
   }
   .cardContainer{
     grid-template-columns: 1fr;

@@ -23,8 +23,18 @@ import vccolourshirt from '../public/images/colourshirt-i.svg'
 import thrift2 from '../public/images/thrift2.jpg'
 import thrift1 from '../public/images/2.jpg'
 
-const links = [ "About", "Explore", "Discover"
-]
+const links = [{
+  name: "About",
+  path: "/about",
+},
+{
+  name: "Explore",
+  path: "/explore",
+},
+{
+  name: "Directory",
+  path: "/directory",
+} ]
 
 const categories = [ {
   name: "Opshops",

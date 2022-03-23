@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   margin: var(--space-md) 0;
+  background-color: var(--main);
+  width: inherit;
 }
 
 .categoryGrid{
@@ -96,8 +98,19 @@
   .subHeader{
     font-size: var(--font-size-md);
   }
+  .textDiv, .imageWrapper{
+    margin: var(--space-sm);
+    padding: var(--space-sm);
+  }
+  .textDiv{
+    width: 100%;
+    margin-top: 0;
+
+  }
   .categoryGrid{
     width: 100%;
+    margin-top: 0;
+
   }
 }
 
@@ -115,6 +128,15 @@
   .categoryGrid{
     width: 100%;
   }
+  .textDiv, .imageWrapper{
+    margin: var(--space-sm);
+    padding: var(--space-sm);
+  }
+  .textDiv{
+    width: 100%;
+    margin-top: 0;
+
+  }
 
 }
 
@@ -131,9 +153,15 @@
   }
   .textDiv, .imageWrapper{
     margin: var(--space-sm);
+    padding: var(--space-sm);
   }
   .categoryGrid{
     width: 100%;
+  }
+  .textDiv{
+    width: 100%;
+    margin-top: 0;
+
   }
 }
 
@@ -143,15 +171,20 @@
     font-size: var(--font-size-lg);
   }
   .subHeader{
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
   }
   .innerWrapper{
     flex-direction: column;
   }
   .textDiv, .imageWrapper{
-    margin: var(--space-sm);
+    margin: var(--space-md);
+    padding: var(--space-sm);
   }
   .categoryGrid{
     width: 100%;
+  }
+  .textDiv{
+    width: 100%;
+    margin-top: 0;
   }
 }

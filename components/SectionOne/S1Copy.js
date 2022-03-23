@@ -1,6 +1,7 @@
 import styles from './SectionOne.module.css'
 import Image from 'next/image'
 import S1Card from './S1Card'
+import Link from 'next/link'
 import { InView } from 'react-intersection-observer'
 
 const S1Copy = ({text, categories}) => {
@@ -16,8 +17,9 @@ const S1Copy = ({text, categories}) => {
 
       <S1Card categories={categories} />
 
-
-    <button className={styles.exploreButton}>Explore</button>
+<Link href={'/directory'}>
+    <button className={styles.exploreButton}><a>Explore</a></button>
+    </Link>
     </div>
   </div>
 )}
