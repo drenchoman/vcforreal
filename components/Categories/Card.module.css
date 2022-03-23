@@ -1,6 +1,6 @@
 .card{
   min-height: 240px;
-
+  position: relative;
   width: 325px;
   height: 100%;
   max-height: 575px;
@@ -9,7 +9,7 @@
   margin: var(--space-sm);
   background-color: var(--card);
   /* background-image: url('../../public/svgs/ssspot.svg'); */
-  margin: var(--space-sm) auto;
+  margin: var(--space-sm);
 
 
 }
