@@ -10,8 +10,7 @@
   background-color: var(--card);
   /* background-image: url('../../public/svgs/ssspot.svg'); */
   margin: var(--space-sm) auto;
-  display: flex;
-  flex-direction: column;
+
 
 }
 
