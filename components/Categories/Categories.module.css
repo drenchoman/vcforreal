@@ -19,9 +19,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(325px, 1fr));
   grid-gap: var(--space-md);
-  width: 85%;
+  width: 100%;
   margin: var(--space-md) 0;
-  padding: var(--space-md) 0;
+  padding: var(--space-md) var(--space-xl-card);
   background-color: var(--main);
   border-radius: var(--radius-sm);
 }
@@ -72,7 +72,9 @@
 }
 
 @media only screen and (max-width: 992px) {
-
+/* .innerWrapper{
+  flex-direction: column;
+} */
   .header{
     font-size: var(--font-size-tablet-lg);
   }
@@ -83,7 +85,7 @@
     margin: var(--space-sm);
   }
   .categoryGrid{
-    width: 100%;
+    padding: var(--space-md) var(--space-sm);
   }
 }
 
@@ -110,9 +112,7 @@
 
   }
   .categoryGrid{
-    width: 100%;
-    margin-top: 0;
-
+    padding: var(--space-md) var(--space-sm);
   }
 }
 
@@ -128,7 +128,7 @@
     flex-direction: column;
   }
   .categoryGrid{
-    width: 100%;
+    padding: var(--space-md) var(--space-sm);
   }
   .textDiv, .imageWrapper{
     margin: var(--space-sm);
@@ -158,7 +158,7 @@
     padding: var(--space-sm);
   }
   .categoryGrid{
-    width: 100%;
+    padding: var(--space-md) var(--space-sm);
   }
   .textDiv{
     width: 100%;
@@ -183,7 +183,7 @@
     padding: var(--space-sm);
   }
   .categoryGrid{
-    width: 100%;
+    padding: var(--space-md) var(--space-sm);
   }
   .textDiv{
     width: 100%;
