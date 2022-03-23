@@ -24,6 +24,7 @@
   padding: var(--space-md) var(--space-xl-card);
   background-color: var(--main);
   border-radius: var(--radius-sm);
+  list-style: none;
 }
 
 .textDiv{
