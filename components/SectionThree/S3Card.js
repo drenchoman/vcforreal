@@ -4,7 +4,7 @@ import S3CardImage from './S3CardImage'
 import CTE from 'react-click-to-edit'
 import react, {useState, useEffect} from 'react';
 
-const S3Card = ({heart, shops, insta, pc}) => {
+const S3Card = ({shops, insta, pc}) => {
 
 const [heartActive, setHeartActive] = useState(false);
 

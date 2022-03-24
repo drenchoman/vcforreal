@@ -13,27 +13,10 @@ import dummyImage4 from '../../public/images/4.jpg'
 import dummyImage5 from '../../public/images/5.jpg'
 import dummyImage6 from '../../public/images/g1.jpg'
 
-import logo from '../../public/logos/logo-white.svg'
-import heart from '../../public/images/heart3.svg'
-
-
 import thriftandvintage from '../../public/images/categoryimages/thrift.jpg'
 import jewel from '../../public/images/categoryimages/jewel.jpg'
 import sneakers from '../../public/images/categoryimages/sneakers.jpg'
 import upcycled from '../../public/images/categoryimages/upcycled.jpg'
-
-const links = [ {
-  name: "About",
-  path: "/about",
-},
-{
-  name: "Explore",
-  path: "/explore",
-},
-{
-  name: "Directory",
-  path: "/directory",
-} ]
 
 const categories = [{
   name: "Opshops",
@@ -66,6 +49,7 @@ const categories = [{
 
 const dummyShops = [
   { name: "The Portage Store",
+    id: 1,
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -76,6 +60,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 2,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -86,6 +71,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 3,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -95,6 +81,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 4,
     region: "Auckland",
     description: "The best thing since sliced bread. Hottest vintage shipping from Auckland to all our whanau across Aotearoa",
     instagram: true,
@@ -105,6 +92,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 5,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -115,6 +103,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 6,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -122,6 +111,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 7,
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -132,6 +122,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 8,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -142,6 +133,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 9,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -151,6 +143,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 10,
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -159,39 +152,15 @@ const dummyShops = [
     facebook: true,
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
-  {
-    name: "Vintage Friends",
-    region: "Wellington",
-    description: "Vintage is love, vintage is life",
-    instagram: false,
-    website: true,
-    trademe: true,
-    facebook: true,
-    images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
-  },
-  {
-    name: "Dunedin sneakers",
-    region: "Dunedin",
-    description: "All the best sneakers, lets get it",
-    instagram: true,
-    website: false,
-    trademe: false,
-    facebook: false,
-    images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
-  }
 ]
 
 
 
-export default function Directory() {
+export default function Directory({ addToCart, activeHearts, updateHeartState, heartId, cartItems, removeItem, cartEmpty}) {
   return (
     <>
-      <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
-      <main className="lockup">
-        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
+        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
-        <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
-        </main>
     </>
   )
 }

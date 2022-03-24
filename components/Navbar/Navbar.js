@@ -7,7 +7,7 @@ import {useEffect, useState} from 'react'
 import styles from './Navbar.module.css'
 
 
-const Navbar = (props) => {
+const Navbar = ({logo, logoHeight, logoWidth, links, heart, insta, pc, cartCount}) => {
 
   const [navClicked, setNavClicked]= useState(false);
 
@@ -17,14 +17,14 @@ const Navbar = (props) => {
 
 
   return <nav className="navbar">
-    <NavbarLogo logo={props.logo} height={props.logoHeight} width={props.logoWidth} />
-    <NavbarLinks links={props.links} heart={props.heart}  />
+    <NavbarLogo logo={logo} height={logoHeight} width={logoWidth} />
+    <NavbarLinks links={links} heart={heart} cartCount={cartCount} />
 
     <div className={styles.mobileNav}>
-    <NavbarFav heart={props.heart} className={styles.mobileFav} insta={props.insta} pc={props.pc}/>
+    <NavbarFav heart={heart} className={styles.mobileFav} insta={insta} pc={pc} cartCount={cartCount} />
     <NavbarBurger handleClick={handleClick} navClicked={navClicked} />
     </div>
-    <NavbarMobileLinks links={props.links} navClicked={navClicked} />
+    <NavbarMobileLinks links={links} navClicked={navClicked} />
   </nav>
 }
 

@@ -3,7 +3,7 @@ import CategoryImage from './CategoryImage'
 import CategoryItem from './CategoryItem'
 import CategoryGrid from './CategoryGrid'
 
-const Categories = ({header, subHeader, catImage, dummyShops}) => {
+const Categories = ({header, subHeader, catImage, dummyShops, addToCart, activeHearts, updateHeartState, heartId }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.innerWrapper}>
@@ -13,7 +13,7 @@ const Categories = ({header, subHeader, catImage, dummyShops}) => {
         </div>
         <CategoryImage catImage={catImage} />
       </div>
-      <CategoryGrid dummyShops={dummyShops} />
+      <CategoryGrid dummyShops={dummyShops} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} />
     </div>
   )
 }

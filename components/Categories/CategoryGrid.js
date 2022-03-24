@@ -1,12 +1,12 @@
 import styles from './Categories.module.css'
 import CategoryItem from './CategoryItem'
 
-const CategoryGrid = ({dummyShops}) => {
+const CategoryGrid = ({dummyShops, addToCart, activeHearts, updateHeartState, heartId}) => {
   return (
     <div className={styles.cGrid}>
     <ul className={styles.categoryGrid}>
       {dummyShops.map(shop =>
-        <CategoryItem key={shop.name} shop={shop} />
+        <CategoryItem key={shop.id} shop={shop} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} />
       )}
     </ul>
     </div>

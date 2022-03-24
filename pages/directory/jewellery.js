@@ -13,9 +13,6 @@ import dummyImage4 from '../../public/images/4.jpg'
 import dummyImage5 from '../../public/images/5.jpg'
 import dummyImage6 from '../../public/images/g1.jpg'
 
-import logo from '../../public/logos/logo-white.svg'
-import heart from '../../public/images/heart3.svg'
-
 
 import thriftandvintage from '../../public/images/categoryimages/thrift.jpg'
 import jewel from '../../public/images/categoryimages/jewel.jpg'
@@ -187,12 +184,8 @@ const dummyShops = [
 export default function Directory() {
   return (
     <>
-      <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
-      <main className="lockup">
         <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
-        <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
-        </main>
     </>
   )
 }

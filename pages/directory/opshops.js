@@ -13,28 +13,11 @@ import dummyImage4 from '../../public/images/4.jpg'
 import dummyImage5 from '../../public/images/5.jpg'
 import dummyImage6 from '../../public/images/g1.jpg'
 
-import logo from '../../public/logos/logo-white.svg'
-import heart from '../../public/images/heart3.svg'
-
-
 import thriftandvintage from '../../public/images/categoryimages/thrift.jpg'
 import jewel from '../../public/images/categoryimages/jewel.jpg'
 import sneakers from '../../public/images/categoryimages/sneakers.jpg'
 import upcycled from '../../public/images/categoryimages/upcycled.jpg'
 import opshops from '../../public/images/categoryimages/opshops.jpg'
-
-const links = [ {
-  name: "About",
-  path: "/about",
-},
-{
-  name: "Explore",
-  path: "/explore",
-},
-{
-  name: "Directory",
-  path: "/directory",
-} ]
 
 const categories = [{
   name: "Opshops",
@@ -187,12 +170,8 @@ const dummyShops = [
 export default function Directory() {
   return (
     <>
-      <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
-      <main className="lockup">
         <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
-        <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
-        </main>
     </>
   )
 }

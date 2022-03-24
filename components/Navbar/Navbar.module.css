@@ -7,10 +7,15 @@
 
 }
 
-.modalHeader{
-  font-size: var(--font-size-lg);
-  width: 15ch;
-  text-align: center;
+.cartCount{
+  position: absolute;
+  z-index: 20;
+  top: -0.8rem;
+  left: 1.2rem;
+  background-color: var(--button);
+  border-radius: 100%;
+  padding: 0 var(--space-sm);
+  font-size: var(--font-size-md);
 }
 
 .modalButtonContainer{
@@ -57,9 +62,7 @@
 }
 /* TO DO: Create pulse for when closed? */
 
-.pulse{
-  animation: pulse .6s ease-in-out;
-}
+
 
 .modalContainer{
   display: flex;
@@ -76,24 +79,7 @@
 
 
 /* Remove z-index if I want to hide circle on close */
-.small{
-  background: var(--secondary);
-    border-radius: 25%;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    right: 2.5rem;
-    top: 3rem;
-    transform: translateY(100%);
-    opacity: 0.75;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    overflow: hidden;
-    z-index: 5;
 
-}
 @keyframes fadein {
   from { opacity: 0}
   to {opacity: 1}
@@ -197,18 +183,6 @@
   transition: all 0.5s ease;
 }
 /* Need to fix animations, cant reuse button component as it has opacity 0 */
-
-.storeButton{
-  background-color: var(--button);
-  color: var(--card);
-  border-radius: var(--radius-sm);
-  border: 0;
-  padding: var(--space-sm);
-  margin: var(--space-lg);
-  width: 150px;
-  height: var(--button-height);
-  letter-spacing: 0.05rem;
-}
 
 .activeRegister{
   opacity: 1;
@@ -371,11 +345,7 @@
     right: 6rem;
     top: 3rem;
   }
-  .modalHeader{
-    font-size: var(--font-size-card);
-    width: 15ch;
-    text-align: center;
-  }
+
 }
 
 @media only screen and (max-width: 414px){
@@ -396,11 +366,7 @@
   .mobileLinksWrapper{
     display: flex;
   }
-  .modalHeader{
-    font-size: var(--font-size-card);
-    width: 15ch;
-    text-align: center;
-  }
+
 
   .small{
     position: absolute;
@@ -430,11 +396,7 @@
     display: flex;
   }
 
-  .modalHeader{
-    font-size: var(--font-size-card);
-    width: 15ch;
-    text-align: center;
-  }
+
   .small{
     position: absolute;
     right: 6rem;
@@ -463,11 +425,7 @@
     display: flex;
   }
 
-  .modalHeader{
-    font-size: var(--font-size-card);
-    width: 15ch;
-    text-align: center;
-  }
+
 
   .small{
     position: absolute;

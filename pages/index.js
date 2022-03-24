@@ -8,8 +8,7 @@ import SectionThree from '../components/SectionThree'
 import SectionFour from '../components/SectionFour'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
-import logo from '../public/logos/logo-white.svg'
-import heart from '../public/images/heart3.svg'
+
 import girl from '../public/images/girl.jpg'
 import tupac from '../public/images/tupac.png'
 import arrowdown from '../public/svgs/arrowdown.svg'
@@ -23,18 +22,7 @@ import vccolourshirt from '../public/images/colourshirt-i.svg'
 import thrift2 from '../public/images/thrift2.jpg'
 import thrift1 from '../public/images/2.jpg'
 
-const links = [{
-  name: "About",
-  path: "/about",
-},
-{
-  name: "Explore",
-  path: "/explore",
-},
-{
-  name: "Directory",
-  path: "/directory",
-} ]
+
 
 const categories = [ {
   name: "Opshops",
@@ -90,19 +78,14 @@ const shops =
   ]
 
 
-export default function Home() {
+export default function Home({cartItems, removeItem, cartEmpty}) {
 return (
 <>
-  <Navbar logo={logo} logoWidth={100} logoHeight={100} links={links} heart={heart} />
- <main className="lockup">
  <Landing landingImage={girl} header="VINTAGE CLOTHING" subHeader="And so much more" />
  <SectionOne text="Connecting you to your local" categories={categories} />
  <SectionTwo tupac={tupac} text="Find your new favourite store" />
- <SectionThree text="Or add your own store!" para="Customise your own card and be discovered!" heart={heart} shops={shops} insta={insta} pc={pc} arrow={arrowdown} />
+ <SectionThree text="Or add your own store!" para="Customise your own card and be discovered!" shops={shops} insta={insta} pc={pc} arrow={arrowdown} />
  <SectionFour thriftPic1={thrift1} thriftPic2={thrift2} />
- <Footer links={links} logo={logo} logoWidth={150} logoHeight={150} />
-
-</main>
 </>
 )
 }

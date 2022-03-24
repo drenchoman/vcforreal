@@ -3,7 +3,7 @@ import Image from 'next/image'
 import NavbarFav from './NavbarFav'
 import Link from 'next/link'
 
-const NavbarLinks = ({links, heart}) => {
+const NavbarLinks = ({links, heart, cartCount}) => {
 
 
   return(
@@ -14,10 +14,8 @@ const NavbarLinks = ({links, heart}) => {
             <li className={styles.linkItems} ><a>{link.name}</a></li>
           </Link>
           )}
-
-
       </ul>
-      <NavbarFav heart={heart} className={styles.desktopFav} />
+      <NavbarFav heart={heart} className={styles.desktopFav} cartCount={cartCount} />
 
 
       </>
