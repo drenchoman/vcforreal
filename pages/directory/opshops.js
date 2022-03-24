@@ -153,7 +153,7 @@ const dummyShops = [
 
 
 
-export default function Directory() {
+export default function Directory({addToCart, activeHearts, updateHeartState, heartId, cartItems, removeItem, cartEmpty}) {
   return (
     <>
         <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={opshops} dummyShops={dummyShops}  />

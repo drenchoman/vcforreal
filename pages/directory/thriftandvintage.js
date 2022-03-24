@@ -152,7 +152,7 @@ const dummyShops = [
 
 
 
-export default function Directory() {
+export default function Directory({addToCart, activeHearts, updateHeartState, heartId, cartItems, removeItem, cartEmpty}) {
   return (
     <>
         <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={thriftandvintage} dummyShops={dummyShops}  />

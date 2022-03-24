@@ -154,7 +154,7 @@ const dummyShops = [
 
 
 
-export default function Directory() {
+export default function Directory({addToCart, activeHearts, updateHeartState, heartId, cartItems, removeItem, cartEmpty}) {
   return (
     <>
         <Categories header="UPCYCLING" subHeader="Shop Sustainably" addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={upcycled} dummyShops={dummyShops}  />
