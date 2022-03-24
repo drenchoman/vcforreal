@@ -9,7 +9,7 @@ filter: blur(3px) grayscale(0.5);
 
 .favouriteItem{
   position: relative;
-  margin: var(--space-sm);
+  margin: var(--space-md);
 }
 .wrapper{
   min-height: 80vh;
@@ -76,20 +76,27 @@ filter: blur(3px) grayscale(0.5);
 
 .favFav{
   position: absolute;
-  right: 1rem;
-  top: 0rem;
+  right: 0rem;
+  top: 1rem;
   z-index: 10;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.favFav > * {
-  margin: var(--space-sm);
-  color: var(--card);
+
+.linksHeader{
+  color:var(--card);
+}
+.linksDiv{
+  display: flex;
+  flex-direction: row;
+  width: 75px;
+  flex-wrap: wrap;
 }
 
 .favLink{
+  margin: var(--space-sm);
   filter: invert(90%) sepia(10%) saturate(612%) hue-rotate(330deg) brightness(109%) contrast(99%);
 }
 

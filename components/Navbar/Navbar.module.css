@@ -18,6 +18,7 @@
   font-size: var(--font-size-md);
 }
 
+
 .modalButtonContainer{
   display: flex;
 }
@@ -64,17 +65,6 @@
 
 
 
-.modalContainer{
-  display: flex;
-  margin: var(--space-xl) auto;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  animation: fadein 1s ease forwards;
-  opacity: 0;
-  height: 100%;
-  animation-delay: 0.7s;
-}
 
 
 
@@ -119,7 +109,7 @@
   top: 0;
   /* z-index: 5; */
   right: -250px;
-  z-index: 8;
+  z-index: 20;
   display: none;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -271,7 +261,7 @@
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  z-index: 10;
+  z-index: 30;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -295,7 +285,7 @@
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 30;
   /* border-color: var(--button); */
 }
 

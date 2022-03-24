@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
 import SectionOne from '../components/SectionOne'
 import SectionTwo from '../components/SectionTwo'
 import SectionThree from '../components/SectionThree'
 import SectionFour from '../components/SectionFour'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
 
 import girl from '../public/images/girl.jpg'
 import tupac from '../public/images/tupac.png'
@@ -21,7 +18,6 @@ import vcshoes from '../public/images/shoes-i.svg'
 import vccolourshirt from '../public/images/colourshirt-i.svg'
 import thrift2 from '../public/images/thrift2.jpg'
 import thrift1 from '../public/images/2.jpg'
-
 
 
 const categories = [ {
@@ -55,27 +51,6 @@ const shops =
 
   }
 
-  const testData = [
-    { name: "Portage Store",
-      description: "An amazing store",
-      image: "/images/1.jpg"
-    },
-      {
-        name: "Good ole Vintage",
-        description: "Really good, and old.",
-        image: "/images/2.jpg"
-      },
-      {
-        name: "Super Vintage Friends",
-        description: "The most super vintage",
-        image: "/images/3.jpg"
-      },
-      {
-        name: "Churchi",
-        description: "What even is a Churchi?",
-        image: "/images/4.jpg",
-      }
-  ]
 
 
 export default function Home({cartItems, removeItem, cartEmpty}) {

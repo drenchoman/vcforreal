@@ -1,10 +1,6 @@
-import Image from 'next/image'
-import Navbar from '../../components/Navbar'
 import DirectoryLanding from '../../components/DirectoryLanding'
 import Categories from '../../components/Categories'
-import Footer from '../../components/Footer'
 import Landing from '../../components/Landing'
-import styles from '../../styles/Home.module.css'
 
 import dummyImage1 from '../../public/images/1.jpg'
 import dummyImage2 from '../../public/images/2.jpg'
@@ -50,6 +46,7 @@ const categories = [{
 const dummyShops = [
   { name: "The Portage Store",
     region: "Auckland",
+    id: 31,
     description: "Your one stop shop for all things Vintage",
     instagram: true,
     website: true,
@@ -59,6 +56,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 32,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -69,6 +67,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 33,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -78,6 +77,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 34,
     region: "Auckland",
     description: "The best thing since sliced bread. Hottest vintage shipping from Auckland to all our whanau across Aotearoa",
     instagram: true,
@@ -88,6 +88,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 35,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -98,6 +99,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 36,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -105,6 +107,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 37,
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -115,6 +118,7 @@ const dummyShops = [
   },
   {
     name: "Vintage Friends",
+    id: 38,
     region: "Wellington",
     description: "Vintage is love, vintage is life",
     instagram: false,
@@ -125,6 +129,7 @@ const dummyShops = [
   },
   {
     name: "Dunedin sneakers",
+    id: 39,
     region: "Dunedin",
     description: "All the best sneakers, lets get it",
     instagram: true,
@@ -134,6 +139,7 @@ const dummyShops = [
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
+    id: 40,
     region: "Auckland",
     description: "Your one stop shop for all things Vintage",
     instagram: true,
@@ -142,26 +148,6 @@ const dummyShops = [
     facebook: true,
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
-  {
-    name: "Vintage Friends",
-    region: "Wellington",
-    description: "Vintage is love, vintage is life",
-    instagram: false,
-    website: true,
-    trademe: true,
-    facebook: true,
-    images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
-  },
-  {
-    name: "Dunedin sneakers",
-    region: "Dunedin",
-    description: "All the best sneakers, lets get it",
-    instagram: true,
-    website: false,
-    trademe: false,
-    facebook: false,
-    images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
-  }
 ]
 
 

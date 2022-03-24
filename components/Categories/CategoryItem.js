@@ -4,6 +4,7 @@ import insta from '../../public/svgs/insta.svg'
 import pc from '../../public/svgs/pc.svg'
 import refresh from '../../public/svgs/refresh.svg'
 import Image from 'next/image'
+import CardImages from './CardImages'
 
 const CategoryItem = ({shop, addToCart, activeHearts, updateHeartState, heartId}) => {
 
@@ -121,46 +122,7 @@ useEffect(() => {
         </div>
 
           <ul className={styles.grid}>
-            <li className={styles.imageContainer}>
-
-              <Image
-                width={115}
-                height={115}
-                alt=""
-                src={shop.images[0]}
-              />
-
-            </li>
-            <li className={styles.imageContainer}>
-
-            <Image
-              width={115}
-              height={115}
-              alt=""
-              src={shop.images[1]}
-            />
-
-            </li>
-            <li className={styles.imageContainer}>
-
-            <Image
-              width={115}
-              height={115}
-              alt=""
-              src={shop.images[2]}
-            />
-
-            </li>
-            <li className={styles.imageContainer}>
-
-            <Image
-              width={115}
-              height={115}
-              alt=""
-              src={shop.images[3]}
-            />
-
-            </li>
+            <CardImages images={shop.images} />
 
           </ul>
 

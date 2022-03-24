@@ -1,10 +1,6 @@
-import Image from 'next/image'
-import Navbar from '../../components/Navbar'
 import DirectoryLanding from '../../components/DirectoryLanding'
 import Categories from '../../components/Categories'
-import Footer from '../../components/Footer'
 import Landing from '../../components/Landing'
-import styles from '../../styles/Home.module.css'
 
 import dummyImage1 from '../../public/images/1.jpg'
 import dummyImage2 from '../../public/images/2.jpg'
