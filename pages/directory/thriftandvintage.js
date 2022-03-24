@@ -155,7 +155,7 @@ const dummyShops = [
 export default function Directory() {
   return (
     <>
-        <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." dummyShops={dummyShops} catImage={thriftandvintage} />
+        <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={thriftandvintage} dummyShops={dummyShops}  />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
     </>
   )

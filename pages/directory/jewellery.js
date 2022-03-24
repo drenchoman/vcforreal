@@ -170,7 +170,7 @@ const dummyShops = [
 export default function Directory() {
   return (
     <>
-        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
+        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." catImage={jewel} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} dummyShops={dummyShops}  />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
     </>
   )

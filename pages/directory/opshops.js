@@ -156,8 +156,8 @@ const dummyShops = [
 export default function Directory() {
   return (
     <>
-        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
-        <DirectoryLanding categories={categories} subHeader="I want more..." />
+        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={opshops} dummyShops={dummyShops}  />
+        <DirectoryLanding categories={categories} subHeader="I want more..."  />
     </>
   )
 }

@@ -159,15 +159,15 @@ export default function Directory({ addToCart, activeHearts, updateHeartState, h
   return (
     <>
         <DirectoryLanding categories={categories} subHeader="I'm looking for..." />
-        <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." dummyShops={dummyShops} catImage={thriftandvintage} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} />
+        <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." catImage={thriftandvintage} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} dummyShops={dummyShops} />
 
-        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" dummyShops={dummyShops} catImage={sneakers} />
+        <Categories header="FOOTWEAR" subHeader="Time for new kicks?" addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={sneakers} dummyShops={dummyShops}  />
 
-        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." dummyShops={dummyShops} catImage={jewel} />
+        <Categories header="JEWELLERY" subHeader="Custom made jewellery of all varieties." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={jewel} dummyShops={dummyShops}  />
 
-        <Categories header="UPCYCLING" subHeader="Shop Sustainably" dummyShops={dummyShops} catImage={upcycled} />
+        <Categories header="UPCYCLING" subHeader="Shop Sustainably" addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={upcycled} dummyShops={dummyShops}  />
 
-        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." dummyShops={dummyShops} catImage={opshops} />
+        <Categories header="OPSHOPS" subHeader="The best Opshops in Auckland, Hamilton, Wellington, Christchurch and beyond." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={opshops} dummyShops={dummyShops}  />
 
     </>
   )
