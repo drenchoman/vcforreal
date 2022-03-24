@@ -1,7 +1,6 @@
 import DirectoryLanding from '../../components/DirectoryLanding'
 import Categories from '../../components/Categories'
 import Landing from '../../components/Landing'
-import styles from '../../styles/Home.module.css'
 
 import dummyImage1 from '../../public/images/1.jpg'
 import dummyImage2 from '../../public/images/2.jpg'
