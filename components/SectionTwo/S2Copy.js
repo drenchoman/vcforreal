@@ -10,7 +10,7 @@ const S2Copy = ({text}) => {
     <h2 className={`${styles.header} ${inView ? styles.headerInView : ""}`}>{text}</h2>
     <p className={`${styles.text} ${inView ? styles.textInView : ""}`}>Over 100+ stores to browse, heart and visit</p>
     <Link href={'/directory'} passHref>
-      <button className={styles.s2Button}></button>
+      <button className={styles.s2Button}>Find</button>
     </Link>
     </div>
   )}

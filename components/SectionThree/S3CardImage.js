@@ -41,8 +41,8 @@ const S3CardImage = ({image, id}) => {
     <div className={`${hideImage ? styles.cardImageHidden : styles.cardImage}`}>
       <label className={styles.labeli} htmlFor={id}>
       <Image
-        width={150}
-        height={150}
+        width={100}
+        height={100}
         src={image}
 
       />

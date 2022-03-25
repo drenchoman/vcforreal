@@ -48,4 +48,7 @@
   --button-height: 50px;
 
   --curtain-height: 98vh;
+
+  --translate-plus: 100%;
+  --translate-minus: -100%;
 }

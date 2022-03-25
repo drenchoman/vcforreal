@@ -1,0 +1,94 @@
+/* SCROLL TEST */
+
+.scrollContainer{
+  overflow: hidden;
+  position: absolute;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+
+}
+
+.leftStyling{
+  letter-spacing: 0.2rem;
+  color:var(--header)
+}
+
+.rightStyling{
+letter-spacing: 0.2rem;
+color:var(--main);
+}
+
+.scrollTextRight{
+  text-align: right;
+ /* animation properties */
+ -moz-transform: translateX(var(--translate-plus));
+ -webkit-transform: translateX(var(--translate-plus));
+ transform: translateX(var(--translate-plus));
+
+ -moz-animation: toRight 30s linear infinite;
+ -webkit-animation: toRight 30s linear infinite;
+ animation: toRight 30s linear infinite;
+}
+
+.scrollTextLeft{
+  text-align: right;
+ /* animation properties */
+ -moz-transform: translateX(var(--translate-minus));
+ -webkit-transform: translateX(var(--translate-minus));
+ transform: translateX(var(--translate-minus));
+
+ -moz-animation: toLeft 30s linear infinite;
+ -webkit-animation: toLeft 30s linear infinite;
+ animation: toLeft 30s linear infinite;
+}
+
+@-webkit-keyframes toLeft {
+  from { -webkit-transform: translateX(var(--translate-minus)); }
+  to { -webkit-transform: translateX(var(--translate-plus)); }
+}
+
+@-moz-keyframes toLeft {
+  from { -moz-transform: translateX(var(--translate-minus)); }
+  to { -moz-transform: translateX(var(--translate-plus)); }
+}
+
+
+@keyframes toLeft {
+  from {
+    -moz-transform: translateX(var(--translate-minus));
+    -webkit-transform: translateX(var(--translate-minus));
+    transform: translateX(var(--translate-minus));
+  }
+  to {
+    -moz-transform: translateX(var(--translate-plus));
+    -webkit-transform: translateX(var(--translate-plus));
+    transform: translateX(var(--translate-plus));
+  }
+}
+
+@-webkit-keyframes toRight {
+  from { -webkit-transform: translateX(var(--translate-plus)); }
+  to { -webkit-transform: translateX(var(--translate-minus)); }
+}
+
+@-moz-keyframes toRight{
+  from { -moz-transform: translateX(var(--translate-plus)); }
+  to { -moz-transform: translateX(var(--translate-minus)); }
+}
+
+
+@keyframes toRight {
+  from {
+    -moz-transform: translateX(var(--translate-plus));
+    -webkit-transform: translateX(var(--translate-plus));
+    transform: translateX(var(--translate-plus));
+  }
+  to {
+    -moz-transform: translateX(var(--translate-minus));
+    -webkit-transform: translateX(var(--translate-minus));
+    transform: translateX(var(--translate-minus));
+  }
+}

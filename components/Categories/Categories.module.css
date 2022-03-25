@@ -28,7 +28,7 @@
   grid-gap: var(--space-lg);
   width: 100%;
   margin: var(--space-md) 0;
-  padding: var(--space-md) var(--space-xl-card);
+  padding: var(--space-lg) var(--space-xl-card);
   background-color: var(--main);
   border-radius: var(--radius-sm);
   list-style: none;
@@ -42,6 +42,7 @@
   margin: var(--space-lgr);
   text-align: center;
   background-color: var(--header);
+  padding: var(--space-md);
 }
 .imageWrapper{
   display: flex;
@@ -53,7 +54,6 @@
 .subHeader{
   font-size: var(--font-size-md);
   width: 20ch;
-
   color: var(--card);
 }
 
@@ -64,6 +64,7 @@
   font-size: var(--font-size-tablet-lg);
   width: 15ch;
   color: var(--card);
+  margin: var(--space-md);
 }
 
 @media only screen and (max-width: 1200px) {

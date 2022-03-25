@@ -61,6 +61,7 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
       </div>
       {filterChecked &&
         <div className={styles.filterDropdown}>
+        <div className={styles.selectWrapper}>
           <select
             className={styles.filterSelect}
             onChange={changeFilter}
@@ -73,6 +74,7 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
               <option value='Christchurch'>Christchurch</option>
               <option value='Dunedin'>Dunedin</option>
           </select>
+        </div>
           <span className={styles.focus}></span>
             <FieldSet header={header} changeCheck={changeCheck} checkBox={checkBox}
             hype={state.hype} americanthrift={state.americanthrift} unisex={state.unisex} japanesethrift={state.japanesethrift}

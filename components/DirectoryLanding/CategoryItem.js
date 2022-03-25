@@ -21,7 +21,7 @@ const CategoryItem = ({cat}) => {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        alt=""
+        alt={cat.alt}
         />
       </div>
     </li>

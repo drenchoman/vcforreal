@@ -14,7 +14,7 @@ const Favourites = ({cartItems, removeItem, cartEmpty}) => {
 
   // TO DO: cartItems is undefined until page is render. Cant use .length as cartItems undefined
 
-    if(cartItems === undefined) {
+    if(cartItems === undefined || cartItems.length === 0) {
       return (
         <div className={styles.wrapper}>
           <h2 className={styles.favHeader}>Your favourite stores</h2>

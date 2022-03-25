@@ -24,7 +24,7 @@ const Navbar = ({logo, logoHeight, logoWidth, links, heart, insta, pc, cartCount
     <NavbarFav heart={heart} className={styles.mobileFav} insta={insta} pc={pc} cartCount={cartCount} />
     <NavbarBurger handleClick={handleClick} navClicked={navClicked} />
     </div>
-    <NavbarMobileLinks links={links} navClicked={navClicked} />
+    <NavbarMobileLinks links={links} navClicked={navClicked} handleClick={handleClick} />
   </nav>
 }
 

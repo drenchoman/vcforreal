@@ -1,14 +1,17 @@
 import styles from './Navbar.module.css'
 import Link from 'next/link'
 
-const NavbarMobileLinks = ({links, navClicked}) => {
+const NavbarMobileLinks = ({links, navClicked, handleClick}) => {
+
+
+
   return (
     <div className={`${styles.mobileLinksWrapper} ${navClicked ? styles.active : ""}`}>
       <div className={styles.mobileLinksCard}>
         <ul className={styles.mobileLinksList}>
           {links.map(link =>
             <Link key={link.name} href={link.path} passHref>
-            <li className={`${styles.mobileListItem} ${navClicked ? styles.activeListItem : ""}`} ><a>{link.name}</a></li>
+            <li onClick={handleClick} className={`${styles.mobileListItem} ${navClicked ? styles.activeListItem : ""}`} ><a>{link.name}</a></li>
             </Link>
           )}
         </ul>

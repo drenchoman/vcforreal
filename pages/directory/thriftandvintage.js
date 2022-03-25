@@ -1,13 +1,14 @@
 import DirectoryLanding from '../../components/DirectoryLanding'
 import Categories from '../../components/Categories'
 import Landing from '../../components/Landing'
+import Head from 'next/head'
 
-import dummyImage1 from '../../public/images/1.jpg'
+import dummyImage1 from '../../public/images/opshop.jpg'
 import dummyImage2 from '../../public/images/2.jpg'
-import dummyImage3 from '../../public/images/3.jpg'
-import dummyImage4 from '../../public/images/4.jpg'
-import dummyImage5 from '../../public/images/5.jpg'
-import dummyImage6 from '../../public/images/g1.jpg'
+import dummyImage3 from '../../public/images/vinc.jpg'
+import dummyImage4 from '../../public/images/sneak.jpg'
+import dummyImage5 from '../../public/images/upc.jpg'
+import dummyImage6 from '../../public/images/jewel.jpg'
 
 import thriftandvintage from '../../public/images/categoryimages/thrift.jpg'
 import jewel from '../../public/images/categoryimages/jewel.jpg'
@@ -17,28 +18,25 @@ import upcycled from '../../public/images/categoryimages/upcycled.jpg'
 const categories = [{
   name: "Opshops",
   image: dummyImage1,
-  path: "/directory/opshops"
+  path: "/directory/opshops",
+  alt: "Photo by @Prudenceearl on Unslpash."
   },
-  {
-  name: "Thrift",
-  image: dummyImage2,
-  path: "/directory/thriftandvintage"
-},{
-  name: "Vintage",
-  image: dummyImage3,
-  path: "/directory/thriftandvintage"
-},{
+{
   name: "Footwear",
   image: dummyImage4,
-  path: "/directory/footwear"
+  path: "/directory/footwear",
+  alt: "Photo by @mxpissioli on Unsplash",
+
 },{
   name: "Jewellery",
   image: dummyImage6,
-  path: "/directory/jewellery"
+  path: "/directory/jewellery",
+  alt: "Photo by @Joeyy_anne on Unsplash."
 },
 {
   name: "Upcycling",
   image: dummyImage5,
+  alt: "Photo by @kat_snow on Unsplash",
   path: "/directory/upcycling"
 }]
 
@@ -165,6 +163,16 @@ const dummyShops = [
 export default function Directory({addToCart, activeHearts, updateHeartState, heartId, cartItems, removeItem, cartEmpty}) {
   return (
     <>
+    <Head>
+    <title>Thrift & Vintage || Vintageclothing.co.nz</title>
+    <meta name="description" content="Find your new favourite Thrift store. The best Vintage from around the web, connect with independent stores in New Zealand" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+     <link rel="manifest" href="/site.webmanifest" />
+     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f3d2c1" />
+     <meta name="theme-color" content="#f3d2c1" />
+      </Head>
         <Categories header="THRIFT & VINTAGE" subHeader="Find your new favourite Thrift store." addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} catImage={thriftandvintage} dummyShops={dummyShops}  />
         <DirectoryLanding categories={categories} subHeader="I want more..." />
     </>
