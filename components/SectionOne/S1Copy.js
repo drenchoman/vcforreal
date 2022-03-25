@@ -17,8 +17,8 @@ const S1Copy = ({text, categories}) => {
 
       <S1Card categories={categories} />
 
-<Link href={'/directory'}>
-    <button className={styles.exploreButton}><a>Explore</a></button>
+<Link href={'/directory'} passHref>
+    <button className={styles.exploreButton}></button>
     </Link>
     </div>
   </div>

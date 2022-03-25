@@ -2,6 +2,8 @@ import styles from './Categories.module.css'
 import CategoryItem from './CategoryItem'
 
 const CategoryGrid = ({dummyShops, addToCart, activeHearts, updateHeartState, heartId}) => {
+
+
   return (
     <div className={styles.cGrid}>
     <ul className={styles.categoryGrid}>

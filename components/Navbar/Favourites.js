@@ -12,7 +12,7 @@ const Favourites = ({cartItems, removeItem, cartEmpty}) => {
     removeItem(id);
   }
 
-    if(!cartEmpty) {
+    if(cartItems.length > 0) {
       return (
         <div className={styles.wrapper}>
           <h2 className={styles.favHeader}>Your favourite stores</h2>

@@ -76,7 +76,7 @@ filter: blur(3px) grayscale(0.5);
 
 .favFav{
   position: absolute;
-  right: 0rem;
+  right: 0.5rem;
   top: 1rem;
   z-index: 10;
   display: flex;

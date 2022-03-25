@@ -52,6 +52,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: false,
+    tags: ["Hype", "Jordans", "Women"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -63,6 +64,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags: ["Hype", "Jordans", "Women"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -74,6 +76,7 @@ const dummyShops = [
     website: false,
     trademe: true,
     facebook: true,
+    tags: ["Hype", "Jordans", "Women"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -84,6 +87,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags: ["Hype", "Jordans", "Women"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -95,6 +99,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags: ["Hype", "Jordans", "Women"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -104,6 +109,7 @@ const dummyShops = [
     description: "All the best sneakers, lets get it",
     instagram: true,
     website: false,
+    tags: ["Hype", "Jordans", "Unisex"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -114,6 +120,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: false,
+    tags: ["Hype", "Jordans", "Unisex"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -125,6 +132,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: true,
+    tags: ["Hype", "Jordans", "Unisex"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -135,7 +143,7 @@ const dummyShops = [
     instagram: true,
     website: false,
     trademe: true,
-    facebook: true,
+    facebook: true,    tags: ["Hype", "Jordans", "Men"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -146,6 +154,8 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    facebook: true,
+    tags: ["Hype", "Jordans", "Men"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
 ]
