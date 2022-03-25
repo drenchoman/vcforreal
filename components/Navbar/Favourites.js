@@ -12,95 +12,101 @@ const Favourites = ({cartItems, removeItem, cartEmpty}) => {
     removeItem(id);
   }
 
-    if(cartItems.length > 0) {
+  // TO DO: cartItems is undefined until page is render. Cant use .length as cartItems undefined
+
+    if(cartItems === undefined) {
       return (
         <div className={styles.wrapper}>
           <h2 className={styles.favHeader}>Your favourite stores</h2>
-    <ul className={styles.favouriteWrapper}>
-      {cartItems.map(item =>
-        <div key={item.id} className={styles.favouriteItem}>
-          <div className={styles.favouriteImage}>
-            <Image
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              src={item.images[0]}
-              alt=""
-              />
-          </div>
-          <div className={styles.favName}>
-            <li>
-            {item.name}
-            </li>
-          </div>
-          <div className={styles.favFav}>
-            <span className={styles.linksHeader}>Visit</span>
-            <div className={styles.linksDiv}>
-            {item.instagram &&
-            <div className={styles.favLink}>
-              <Image
-                width={20}
-                height={20}
-                src={insta}
-                alt="Instagram Icon"
-              />
-            </div>
-          }
-          {item.website &&
-            <div className={styles.favLink}>
-              <Image
-                width={20}
-                height={20}
-                src={pc}
-                alt="PC icon"
-              />
-            </div>
-          }
-          {item.facebook &&
-            <div className={styles.favLink}>
-              <Image
-                width={20}
-                height={20}
-                src={pc}
-                alt="FB icon"
-              />
-            </div>
-          }
-          {item.trademe &&
-            <div className={styles.favLink}>
-              <Image
-                width={20}
-                height={20}
-                src={pc}
-                alt="Trademe icon"
-              />
-            </div>
-          }
-          </div>
-          </div>
-          <div onClick={() => handleClick(item.id)} className={styles.xToClose}>
-            <Image
-              width={20}
-              height={20}
-              src={x}
-              alt="X to close"
-            />
-
-          </div>
+          <Link href={'/directory'} passHref>
+            <button className={styles.storeButton}>Explore stores</button>
+          </Link>
         </div>
-      )}
-    </ul>
-    </div>
+      )
+    }
+      else{
+        return (
+          <div className={styles.wrapper}>
+            <h2 className={styles.favHeader}>Your favourite stores</h2>
+      <ul className={styles.favouriteWrapper}>
+        {cartItems.map(item =>
+          <div key={item.id} className={styles.favouriteItem}>
+            <div className={styles.favouriteImage}>
+              <Image
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                src={item.images[0]}
+                alt=""
+                />
+            </div>
+            <div className={styles.favName}>
+              <li>
+              {item.name}
+              </li>
+            </div>
+            <div className={styles.favFav}>
+              <span className={styles.linksHeader}>Visit</span>
+              <div className={styles.linksDiv}>
+              {item.instagram &&
+              <div className={styles.favLink}>
+                <Image
+                  width={20}
+                  height={20}
+                  src={insta}
+                  alt="Instagram Icon"
+                />
+              </div>
+            }
+            {item.website &&
+              <div className={styles.favLink}>
+                <Image
+                  width={20}
+                  height={20}
+                  src={pc}
+                  alt="PC icon"
+                />
+              </div>
+            }
+            {item.facebook &&
+              <div className={styles.favLink}>
+                <Image
+                  width={20}
+                  height={20}
+                  src={pc}
+                  alt="FB icon"
+                />
+              </div>
+            }
+            {item.trademe &&
+              <div className={styles.favLink}>
+                <Image
+                  width={20}
+                  height={20}
+                  src={pc}
+                  alt="Trademe icon"
+                />
+              </div>
+            }
+            </div>
+            </div>
+            <div onClick={() => handleClick(item.id)} className={styles.xToClose}>
+              <Image
+                width={20}
+                height={20}
+                src={x}
+                alt="X to close"
+              />
+
+            </div>
+          </div>
+        )}
+      </ul>
+      </div>
+
   )
   }
-  return (
-    <div className={styles.wrapper}>
-      <h2 className={styles.favHeader}>Your favourite stores</h2>
-      <Link href={'/directory'} passHref>
-        <button className={styles.storeButton}>Explore stores</button>
-      </Link>
-    </div>
-  )
+
   }
 
 
