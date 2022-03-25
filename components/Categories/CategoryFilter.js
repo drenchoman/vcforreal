@@ -76,7 +76,7 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
           <span className={styles.focus}></span>
             <FieldSet header={header} changeCheck={changeCheck} checkBox={checkBox}
             hype={state.hype} americanthrift={state.americanthrift} unisex={state.unisex} japanesethrift={state.japanesethrift}
-            women={state.women} inclusivesizes={state.inclusivesizes} hypesneak={state.hypesneak} jordans={state.jordans}
+           inclusivesizes={state.inclusivesizes} hypesneak={state.hypesneak} jordans={state.jordans}
             preloved={state.preloved} madeinnz={state.madeinnz} customsizes={state.customsizes} alterations={state.alterations}
             earrings={state.earrings} rings={state.rings} crystals={state.crystals} opensaturday={state.opensaturday} men={state.men} women={state.women}
             opensunday={state.opensunday} openweekends={state.openweekends} paybykg={state.paybykg} handleChange={handleChange}
