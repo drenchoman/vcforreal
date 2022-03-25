@@ -17,12 +17,7 @@ import sneakers from '../../public/images/categoryimages/sneakers.jpg'
 import upcycled from '../../public/images/categoryimages/upcycled.jpg'
 
 
-const categories = [{
-  name: "Opshops",
-  image: dummyImage1,
-  path: "/directory/opshops",
-  alt: "Photo by @Prudenceearl on Unslpash."
-  },
+const categories = [
   {
   name: "Thrift",
   image: dummyImage2,
@@ -44,7 +39,12 @@ const categories = [{
   image: dummyImage6,
   path: "/directory/jewellery",
   alt: "Photo by @Joeyy_anne on Unsplash."
-},
+},{
+  name: "Opshops",
+  image: dummyImage1,
+  path: "/directory/opshops",
+  alt: "Photo by @Prudenceearl on Unslpash."
+  }
 ]
 
 

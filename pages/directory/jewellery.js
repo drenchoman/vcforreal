@@ -30,12 +30,7 @@ const links = [ {
   path: "/directory",
 } ]
 
-const categories = [{
-  name: "Opshops",
-  image: dummyImage1,
-  path: "/directory/opshops",
-  alt: "Photo by @Prudenceearl on Unslpash."
-  },
+const categories = [
   {
   name: "Thrift",
   image: dummyImage2,
@@ -58,7 +53,12 @@ const categories = [{
   image: dummyImage5,
   alt: "Photo by @kat_snow on Unsplash",
   path: "/directory/upcycling"
-}]
+},{
+  name: "Opshops",
+  image: dummyImage1,
+  path: "/directory/opshops",
+  alt: "Photo by @Prudenceearl on Unslpash."
+  }]
 
 
 const dummyShops = [

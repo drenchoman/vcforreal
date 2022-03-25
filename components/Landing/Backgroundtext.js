@@ -28,6 +28,19 @@ const Backgroundtext = (props) => {
       <div className={`${styles.scrollTextRight} ${styles.rightStyling}`}>
         VINTAGECLOTHING.CO.NZ
       </div>
+
+      <div className={`${styles.leftStyling} ${styles.scrollTextLeft}`}>
+        VINTAGECLOTHING.CO.NZ
+      </div>
+      <div className={`${styles.scrollTextRight} ${styles.rightStyling}`}>
+        VINTAGECLOTHING.CO.NZ
+      </div>
+      <div className={`${styles.leftStyling} ${styles.scrollTextLeft}`}>
+        VINTAGECLOTHING.CO.NZ
+      </div>
+      <div className={`${styles.scrollTextRight} ${styles.rightStyling}`}>
+        VINTAGECLOTHING.CO.NZ
+      </div>
     </div>
   )
 }

@@ -3,22 +3,26 @@
 .scrollContainer{
   overflow: hidden;
   position: absolute;
-  width: 99vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 90%;
+  top: -2rem;
   justify-content: space-around;
+  transform: rotate(10deg);
 
 }
 
 .leftStyling{
   letter-spacing: 0.2rem;
-  color:var(--header)
+  color:var(--header);
+
 }
 
 .rightStyling{
 letter-spacing: 0.2rem;
 color:var(--main);
+
 }
 
 .scrollTextRight{
@@ -28,21 +32,21 @@ color:var(--main);
  -webkit-transform: translateX(var(--translate-plus));
  transform: translateX(var(--translate-plus));
 
- -moz-animation: toRight 30s linear infinite;
- -webkit-animation: toRight 30s linear infinite;
- animation: toRight 30s linear infinite;
+ -moz-animation: toRight 35s linear infinite;
+ -webkit-animation: toRight 35s linear infinite;
+ animation: toRight 35s linear infinite;
 }
 
 .scrollTextLeft{
   text-align: right;
  /* animation properties */
- -moz-transform: translateX(var(--translate-minus));
+ /* -moz-transform: translateX(var(--translate-minus));
  -webkit-transform: translateX(var(--translate-minus));
- transform: translateX(var(--translate-minus));
+ transform: translateX(var(--translate-minus)); */
 
- -moz-animation: toLeft 30s linear infinite;
- -webkit-animation: toLeft 30s linear infinite;
- animation: toLeft 30s linear infinite;
+ -moz-animation: toLeft 35s linear infinite;
+ -webkit-animation: toLeft 35s linear infinite;
+ animation: toLeft 35s linear infinite;
 }
 
 @-webkit-keyframes toLeft {
