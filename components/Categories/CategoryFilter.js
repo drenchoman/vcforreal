@@ -4,30 +4,31 @@ import arrowDown from '../../public/svgs/cardArrow.svg'
 import FieldSet from './FieldSet'
 import Image from 'next/image'
 
-const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
+const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
 
   const [filterChecked, setFilterChecked] = useState(false);
 
+
   const [state, setState]= useState({
     hype: false,
-    americanThrift: false,
+    americanthrift: false,
     unisex: false,
-    japaneseThrift: false,
+    japanesethrift: false,
     women: false,
     men: false,
-    inclusiveSizes: false,
-    hypeSneak: false,
+    inclusivesizes: false,
+    hypesneak: false,
     jordans: false,
     preloved: false,
-    madeInNz: false,
-    customSizes: false,
+    madeinnz: false,
+    customsizes: false,
     alterations: false,
     earrings: false,
     rings: false,
     crystals: false,
-    openSaturday: false,
-    openSunday: false,
-    openWeekends: false,
+    opensaturday: false,
+    opensaturday: false,
+    opensaturday: false,
     payByKg: false,
   })
 
@@ -38,12 +39,11 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
   const handleChange= (e) => {
     const value =
       e.target.type === 'checkbox' ? e.target.checked : e.target.value
-      console.log(value, 'value')
       setState({
         ...state,
         [e.target.name]: value
       })
-      changeCheck(e);
+      changeCheck(event, e.target.name);
   };
 
   return (
@@ -53,8 +53,8 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
         <div className={filterChecked ? styles.arrowClicked : styles.arrow}>
           <Image
             src={arrowDown}
-            width={15}
-            height={15}
+            width={10}
+            height={10}
             alt="Arrow- Click to filter"
           />
         </div>
@@ -64,8 +64,8 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
           <select
             className={styles.filterSelect}
             onChange={changeFilter}
-            aria-label='Filter by Region'>
-              <option className={styles.filterOption} value='All'>Fitler by Region</option>
+            aria-label='Filter Region'>
+              <option className={styles.filterOption} value='All'>Filter Region</option>
               <option value='Auckland'>Auckland</option>
               <option value='Hamilton'>Hamilton</option>
               <option value='Wellington'>Wellington</option>
@@ -75,11 +75,11 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
           </select>
           <span className={styles.focus}></span>
             <FieldSet header={header} changeCheck={changeCheck} checkBox={checkBox}
-            hype={state.hype} americanThrift={state.americanThrift} unisex={state.unisex} japaneseThrift={state.japaneseThrift}
-            women={state.women} inclusiveSizes={state.inclusiveSizes} hypeSneak={state.hypeSneak} jordans={state.jordans}
-            preloved={state.preloved} madeInNz={state.madeInNz} customSizes={state.customSizes} alterations={state.alterations}
-            earrings={state.earrings} rings={state.rings} crystals={state.crystals} openSaturday={state.openSaturday} men={state.men} women={state.women}
-            openSunday={state.openSunday} openWeekends={state.openWeekends} payByKg={state.payByKg} handleChange={handleChange}
+            hype={state.hype} americanthrift={state.americanthrift} unisex={state.unisex} japanesethrift={state.japanesethrift}
+            women={state.women} inclusivesizes={state.inclusivesizes} hypesneak={state.hypesneak} jordans={state.jordans}
+            preloved={state.preloved} madeinnz={state.madeinnz} customsizes={state.customsizes} alterations={state.alterations}
+            earrings={state.earrings} rings={state.rings} crystals={state.crystals} opensaturday={state.opensaturday} men={state.men} women={state.women}
+            opensaturday={state.opensaturday} opensaturday={state.opensaturday} payByKg={state.payByKg} handleChange={handleChange}
             />
 
         </div>
@@ -87,6 +87,7 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox}) => {
 
       }
     </div>
+
   )
 };
 

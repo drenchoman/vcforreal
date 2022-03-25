@@ -1,12 +1,12 @@
 import styles from './Filter.module.css'
 
 
-const FieldSet = ({changeCheck, header, checkBox, hype, americanThrift, men,
-unisex, women, inclusiveSizes, hypeSneak, jordans, preloved, madeInNz, customSizes, alterations,
-earrings, rings, crystals, openSaturday, openSunday, openWeekends, payByKg, japaneseThrift,
+const FieldSet = ({changeCheck, header, checkBox, hype, americanthrift, men,
+unisex, women, inclusivesizes, hypesneak, jordans, preloved, madeinnz, customsizes, alterations,
+earrings, rings, crystals, opensaturday, opensunday, openweekends, payByKg, japanesethrift,
 handleChange}) => {
 
-  if(header === 'Thrift & Vintage'){
+  if(header === 'THRIFT & VINTAGE'){
     return (
         <div className={styles.filterSet}>
         <div className={styles.filterDiv}>
@@ -14,16 +14,16 @@ handleChange}) => {
           <input onChange={handleChange}  type='checkbox' value='Hype'  name='hype' checked={hype} id='hype'/>
         </div>
         <div className={styles.filterDiv}>
-          <label htmlFor='americanThrift'> American Thrift </label>
-          <input onChange={handleChange} type='checkbox' value='American Thrift' name='americanThrift' checked={americanThrift} id='americanThrift'/>
+          <label htmlFor='americanthrift'> American Thrift </label>
+          <input onChange={handleChange} type='checkbox' value='American Thrift' name='americanthrift' checked={americanthrift} id='americanthrift'/>
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='unisex'> Unisex </label>
           <input onChange={handleChange} type='checkbox' value='Unisex' name='unisex' checked={unisex} id='unisex'/>
         </div>
         <div className={styles.filterDiv}>
-          <label htmlFor='japaneseThrift'> Japanese Thrift </label>
-          <input onChange={handleChange} type='checkbox' value='Japanese Thrift' name='japaneseThrift' checked={japaneseThrift} id='japaneseThrift'/>
+          <label htmlFor='japanesethrift'> Japanese Thrift </label>
+          <input onChange={handleChange} type='checkbox' value='Japanese Thrift' name='japanesethrift' checked={japanesethrift} id='japanesethrift'/>
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='women'>Women</label>
@@ -31,7 +31,7 @@ handleChange}) => {
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='inclusive'>Inclusive Sizes</label>
-          <input onChange={handleChange} type='checkbox' value='Inclusive' name='inclusiveSizes' checked={inclusiveSizes} id='inclusive'/>
+          <input onChange={handleChange} type='checkbox' value='Inclusive' name='inclusivesizes' checked={inclusivesizes} id='inclusive'/>
         </div>
         </div>
 
@@ -40,8 +40,8 @@ handleChange}) => {
     return(
       <div className={styles.filterSet}>
         <div className={styles.filterDiv}>
-          <label htmlFor="hypeSneak">Hype </label>
-          <input onChange={handleChange} type='checkbox' value='Hype' name='hypeSneak' checked={hypeSneak} id='hypeSneak'/>
+          <label htmlFor="hypesneak">Hype </label>
+          <input onChange={handleChange} type='checkbox' value='Hype' name='hypesneak' checked={hypesneak} id='hypesneak'/>
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='jordans'>Jordans</label>
@@ -65,16 +65,16 @@ handleChange}) => {
         </div>
       </div>
     )
-  } else if (header === 'Upcycling'){
+  } else if (header === 'UPCYCLING'){
     return(
       <div className={styles.filterSet}>
         <div className={styles.filterDiv}>
-          <label htmlFor="madeInNz">Made in NZ</label>
-          <input onChange={handleChange} type='checkbox' value='Made in NZ' name='madeInNz' checked={madeInNz} id='madeInNz'/>
+          <label htmlFor="madeinnz">Made in NZ</label>
+          <input onChange={handleChange} type='checkbox' value='Made in NZ' name='madeinnz' checked={madeinnz} id='madeinnz'/>
         </div>
         <div className={styles.filterDiv}>
-          <label htmlFor='customSizes'>Custom Sizes</label>
-          <input onChange={handleChange} type='checkbox' value='Made to Measure' name='customSizes' checked={customSizes} id='customSizes'/>
+          <label htmlFor='customsizes'>Custom Sizes</label>
+          <input onChange={handleChange} type='checkbox' value='Made to Measure' name='customsizes' checked={customsizes} id='customsizes'/>
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='alterations'>Alterations</label>
@@ -83,7 +83,7 @@ handleChange}) => {
       </div>
 
     )
-  } else if (header === 'Jewellery'){
+  } else if (header === 'JEWELLERY'){
     return(
       <div className={styles.filterSet}>
         <div className={styles.filterDiv}>
@@ -100,20 +100,20 @@ handleChange}) => {
         </div>
       </div>
     )
-  } else if (header === 'Opshops'){
+  } else if (header === 'OPSHOPS'){
     return (
       <div className={styles.filterSet}>
         <div className={styles.filterDiv}>
-          <label htmlFor='openSaturday'>Open Saturday </label>
-          <input onChange={handleChange} type='checkbox' value='Open Saturday' name='openSaturday' checked={openSaturday} id='openSaturday'/>
+          <label htmlFor='opensaturday'>Open Saturday </label>
+          <input onChange={handleChange} type='checkbox' value='Open Saturday' name='opensaturday' checked={opensaturday} id='opensaturday'/>
         </div>
         <div className={styles.filterDiv}>
-          <label htmlFor='openSunday'>Open Sunday</label>
-          <input onChange={handleChange} type='checkbox' value='Open Sunday' name='openSunday' checked={openSunday} id='openSunday'/>
+          <label htmlFor='opensunday'>Open Sunday</label>
+          <input onChange={handleChange} type='checkbox' value='Open Sunday' name='opensunday' checked={opensunday} id='opensunday'/>
         </div>
         <div className={styles.filterDiv}>
-          <label htmlFor='openWeekends'>Open Weekends </label>
-          <input onChange={handleChange} type='checkbox' value='Open Weekends' name='openWeekends' checked={openWeekends} id='openWeekends'/>
+          <label htmlFor='openweekends'>Open Weekends </label>
+          <input onChange={handleChange} type='checkbox' value='Open Weekends' name='openweekends' checked={openweekends} id='openweekends'/>
         </div>
         <div className={styles.filterDiv}>
           <label htmlFor='payByKg'> Pay BY KG </label>

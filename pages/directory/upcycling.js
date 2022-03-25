@@ -54,6 +54,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: false,
+    tags:["madeinnz", "unisex"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -65,6 +66,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags:["madeinnz", "unisex"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -76,6 +78,7 @@ const dummyShops = [
     website: false,
     trademe: true,
     facebook: true,
+    tags:["madeinnz", "unisex"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -86,6 +89,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags:["madeinnz", "unisex"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -97,6 +101,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags:["alterations", "customsizes"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -106,6 +111,7 @@ const dummyShops = [
     description: "All the best sneakers, lets get it",
     instagram: true,
     website: false,
+    tags:["alterations", "customsizes"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -116,6 +122,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: false,
+    tags:["alterations", "customsizes"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
   {
@@ -127,6 +134,7 @@ const dummyShops = [
     website: true,
     trademe: false,
     facebook: true,
+    tags:["alterations", "customsizes"],
     images: ["/images/4.jpg", "/images/3.jpg", "/images/1.jpg", "/images/2.jpg"],
   },
   {
@@ -138,6 +146,7 @@ const dummyShops = [
     website: false,
     trademe: true,
     facebook: true,
+    tags:["inclusivesizes"],
     images: ["/images/3.jpg", "/images/1.jpg", "/images/2.jpg", "/images/4.jpg"],
   },
   { name: "The Portage Store",
@@ -148,6 +157,7 @@ const dummyShops = [
     website: true,
     trademe: true,
     facebook: true,
+    tags:["inclusivesizes"],
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg", "/images/4.jpg"],
   },
 ]

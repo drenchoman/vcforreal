@@ -93,7 +93,7 @@
     margin: var(--space-sm);
   }
   .categoryGrid{
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
   }
 }
 
@@ -120,7 +120,7 @@
 
   }
   .categoryGrid{
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
   }
 }
 
@@ -136,7 +136,7 @@
     flex-direction: column;
   }
   .categoryGrid{
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
   }
   .textDiv, .imageWrapper{
     margin: var(--space-sm);
@@ -166,7 +166,7 @@
     padding: var(--space-sm);
   }
   .categoryGrid{
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
   }
   .textDiv{
     width: 100%;
@@ -191,7 +191,7 @@
     padding: var(--space-sm);
   }
   .categoryGrid{
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-lg) var(--space-sm);
   }
   .textDiv{
     width: 100%;

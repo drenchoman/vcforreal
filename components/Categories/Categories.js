@@ -5,6 +5,7 @@ import CategoryGrid from './CategoryGrid'
 import CategoryFilter from './CategoryFilter'
 import {useState, useEffect} from 'react'
 
+
 const Categories = ({header, subHeader, catImage, addToCart, activeHearts, updateHeartState, heartId, dummyShops }) => {
 
   const [checkBox, setCheckBox] = useState([]);
@@ -12,55 +13,98 @@ const Categories = ({header, subHeader, catImage, addToCart, activeHearts, updat
   const [filterParam, setFilterParam] = useState(['All'])
 
   const changeCheck = (e) => {
-    if (e.target.checked) {
-      setCheckBox(checkBox => [...checkBox, e.target.value]);
-      console.log(checkBox, 'checkBox')
-    } else {
-      setCheckBox(checkBox.filter(item => item !== e.target.value));
-      console.log('checkBox', 'checkbox else')
-    }
+        let checked = ((prev) => ({
+        ...prev,
+        [e.target.name]: e.target.checked,
+      }));
+      console.log(checkBox)
+      setCheckBox(checked)
+      console.log("change check")
   }
 
   const changeFilter = (e) => {
     setFilterParam(e.target.value)
-    console.log(filterParam, 'filterParam')
   }
 
-const returnCheckBox = (stores) => {
-  let newStores = stores.filter((newItem) => {
-    console.log(checkBox)
-    return newItem.tags.some(tag => checkBox[tag] === true
-  )
-})
+// Issue could be with this could check if object contains true value
+// ISSSUE IS WITH MY LOGIC, CANT WORK IT OUT BUT NEARLY HAVE IT. CURRENT STATUS 8/10
 
-console.log(newStores, "newStores")
-// return newStores
+
+const hasCategoryFilter = Object.values(checkBox).includes(true);
+
+const returnCheckBox = (stores) => {
+  if (hasCategoryFilter) {
+  let newStores = stores.filter((newItem) => {
+    return newItem.tags.some(tag => checkBox[tag.toLowerCase()] === true
+    )
+  })
+} else if (hasCategoryFilter === false){
+  console.log("BOOP BOOP")
+  setStores(dummyShops)
+  return dummyShops
+} else{
+  // unsure if this gets used at all
+  newStores = dummyShops
+  return newStores
 }
+console.log("checkcheck")
+console.log(newStores, "NEW STORES FILTERRED")
+  setStores(newStores)
+  return newStores
+};
+
+
+
+
+// NEED TO FIX, CANT ADD MULTIPLE FILTERS
 
 const returnFilter = (stores) => {
-  let filteredArray = dummyShops.filter((item) => {
+  let filteredArray = stores.filter((item) => {
     if (item.region == filterParam) {
-      return dummyShops.filter((newItem) => {
+      return stores.filter((newItem) => {
         return newItem.region == filterParam
-        console.log(dummyShops, "FILTEREED")
       });
       setStores(filteredArray)
     } else if (filterParam == 'All'){
-      return dummyShops.filter((newItem) => {
+      return stores.filter((newItem) => {
         return newItem
       });
     }
   })
 
   setStores(filteredArray)
-
+  return filteredArray
 }
 
+const updateStores = () => {
+  returnFilter(stores);
+  returnCheckBox(stores);
+};
+
 useEffect (() =>{
-returnFilter(stores)
-returnCheckBox(stores)
-console.log(stores, "DUMMY SHOPS")
-},[filterParam, checkBox])
+  let storesToFilter = returnCheckBox(stores);
+    returnFilter(storesToFilter);
+
+
+  console.log("useEffect1 triggered")
+
+
+},[filterParam]);
+
+useEffect (() => {
+  let storesToFilter = returnFilter(dummyShops);
+  returnCheckBox(storesToFilter);
+  console.log(stores)
+  console.log("<<<<<<effect 2 triggered>>>>>>>>")
+  console.log(filterParam, "filterParam")
+
+},[checkBox]);
+
+useEffect(() => {
+  setStores(dummyShops)
+},[])
+
+
 
 
   return (
@@ -71,9 +115,10 @@ console.log(stores, "DUMMY SHOPS")
           <h3 className={styles.subHeader}>{subHeader}</h3>
         </div>
         <CategoryImage catImage={catImage} />
-        <CategoryFilter header={header} changeFilter={changeFilter} changeCheck={changeCheck} checkBox={checkBox} />
       </div>
-      <CategoryGrid addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} dummyShops={stores}  />
+      <CategoryGrid addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} dummyShops={stores}>
+      <CategoryFilter  header={header} changeFilter={changeFilter} changeCheck={changeCheck} checkBox={checkBox} />
+  </CategoryGrid>
     </div>
   )
 }
