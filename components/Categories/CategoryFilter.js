@@ -27,9 +27,9 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
     rings: false,
     crystals: false,
     opensaturday: false,
-    opensaturday: false,
-    opensaturday: false,
-    payByKg: false,
+    opensunday: false,
+    openweekends: false,
+    paybykg: false,
   })
 
   const handleClick = () => {
