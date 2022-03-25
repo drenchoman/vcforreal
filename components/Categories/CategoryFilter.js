@@ -79,7 +79,7 @@ const CategoryFilter = ({header, changeCheck, changeFilter, checkBox,}) => {
             women={state.women} inclusivesizes={state.inclusivesizes} hypesneak={state.hypesneak} jordans={state.jordans}
             preloved={state.preloved} madeinnz={state.madeinnz} customsizes={state.customsizes} alterations={state.alterations}
             earrings={state.earrings} rings={state.rings} crystals={state.crystals} opensaturday={state.opensaturday} men={state.men} women={state.women}
-            opensaturday={state.opensaturday} opensaturday={state.opensaturday} payByKg={state.payByKg} handleChange={handleChange}
+            opensunday={state.opensunday} openweekends={state.openweekends} paybykg={state.paybykg} handleChange={handleChange}
             />
 
         </div>
