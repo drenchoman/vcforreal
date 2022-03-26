@@ -2,7 +2,7 @@ import Head from 'next/head'
 import AboutPage from '../components/About/About'
 import aboutImage from '../public/images/about.JPG'
 import aboutImageEnd from '../public/images/aboutend.jpg'
-import aboutImageMiddle from '../public/images/aboutMiddle.jpg'
+import aboutImageMiddle from '../public/images/aboutmiddle.jpg'
 import github from '../public/svgs/github.svg'
 import DirectoryLanding from '../components/DirectoryLanding/DirectoryLanding'
 
