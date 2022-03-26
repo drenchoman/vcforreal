@@ -5,7 +5,7 @@ const ExploreGrid = ({gridImages}) => {
   return (
     <div className={styles.grid}>
     {gridImages.map(image =>
-      <div className={styles.imageContainer}>
+      <div key={image.author} className={styles.imageContainer}>
         <Image
         layout="fill"
         objectFit="cover"
