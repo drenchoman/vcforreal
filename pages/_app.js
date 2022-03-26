@@ -111,9 +111,10 @@ useEffect(() => {
 
 }, [activeHearts, cartEmpty])
 
-  return <Layout cartCount={cartCount}>
+  return <Layout {...pageProps} cartCount={cartCount}>
    <Component {...pageProps} addToCart={addToCart} activeHearts={activeHearts} updateHeartState={updateHeartState} heartId={heartId} cartItems={cartItems} removeItem={removeItem} cartEmpty={cartEmpty}  />
    </Layout>
 }
+
 
 export default MyApp

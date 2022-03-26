@@ -45,7 +45,7 @@ const categories = [
   alt: "Photo by @Prudenceearl on Unslpash."
   }]
 
-export default function Explore(props) {
+export default function Explore({gImages}) {
   return (
     <>
     <Head>
@@ -58,8 +58,19 @@ export default function Explore(props) {
      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f3d2c1" />
      <meta name="theme-color" content="#f3d2c1" />
       </Head>
-    <ExploreComp />
+    <ExploreComp gImages={gImages} />
     <DirectoryLanding categories={categories} />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const res = await fetch("https://picsum.photos/v2/list");
+  const gImages = await res.json();
+  
+  return {
+    props:{
+      gImages,
+    },
+  }
 }

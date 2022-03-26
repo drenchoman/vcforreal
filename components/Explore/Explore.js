@@ -1,26 +1,17 @@
 import styles from './Explore.module.css'
 import {useEffect, useState} from 'react'
 import ExploreGrid from './ExploreGrid'
-const Explore = ({gridImages}) => {
+const Explore = ({gImages}) => {
 
 
   return (
     <div className={styles.wrapper}>
-
-      <ExploreGrid gridImages={gridImages} />
+      <h2 className={styles.header}>Explore</h2>
+      <ExploreGrid gImages={gImages}/>
 
     </div>
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch("https://picsum.photos/v2/list")
-  const gridImages = await res.json();
-  return {
-    props:{
-      gridImages
-    }
-  }
-}
 
 export default Explore
