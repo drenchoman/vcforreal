@@ -3,11 +3,54 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
+.githubwrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: var(--space-md);
+
+}
+
+.github{
+  background-color: var(--header);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  filter: invert(90%) sepia(10%) saturate(612%) hue-rotate(330deg) brightness(109%) contrast(99%);
+  margin: var(--space-sm);
+}
+
+.github:hover{
+  cursor: pointer;
+}
+
+.github:after{
+  content: "Drenchoman";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--card);
+}
+
+.jobme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30ch;
+}
+
 
 .imageCaption{
   text-align: center;
   align-self: center;
+  color: var(--header);
+  background-color: var(--card);
+  padding: var(--space-sm);
 
 }
 .header{
@@ -19,6 +62,11 @@
   color: var(--header);
   font-weight: 600;
   opacity: 0;
+}
+
+.subHeader{
+  font-size: var(--font-size-mdl);
+    color: var(--header);
 }
 
 .headerInView{
@@ -37,7 +85,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 60ch;
+background-color: var(--main);
+padding: var(--space-md);
+margin-bottom: var(--space-xl);
 }
+
+
 
 .aboutImage{
   align-self: center;

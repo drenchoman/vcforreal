@@ -1,5 +1,6 @@
+/* Can change fitlercontaienr to sticky */
+
 .filterContainer{
-  position: sticky;
   top: 0;
   margin: 0 auto;
   z-index: 15;

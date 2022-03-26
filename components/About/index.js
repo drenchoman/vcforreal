@@ -1,6 +1,7 @@
 import About from './About'
 import AboutImage from './AboutImage'
+import Findmeajob from './Findmeajob'
 
-export {AboutImage}
+export {AboutImage, Findmeajob}
 
 export default About
