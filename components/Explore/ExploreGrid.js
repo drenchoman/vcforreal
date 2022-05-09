@@ -8,7 +8,7 @@ useEffect(() => {
   console.log(gImages)
 },[])
   return (
-    <div className={styles.grid}>
+    <div className={styles.altGrid}>
     {gImages.map(image =>
       <div key={image.id} className={styles.imageContainer}>
         <Image
