@@ -70,3 +70,15 @@ hr{
 .CTE--input{
   color: var(--main);
 }
+
+
+/* Grid position alt */
+/* div > .small{
+  margin-top: 0.4em;
+  position: relative;
+}
+
+.large{
+  position: relative;
+  margin-bottom: 0.3em;
+} */

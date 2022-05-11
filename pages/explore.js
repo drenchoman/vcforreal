@@ -9,40 +9,56 @@ import dummyImage4 from '../public/images/sneak.jpg'
 import dummyImage5 from '../public/images/upc.jpg'
 import dummyImage6 from '../public/images/jewel.jpg'
 
+import vcjacket from '../public/images/vcjacket.svg'
+import vcshoes from '../public/images/vcshoes.svg'
+import vcpants from '../public/images/vcpants.svg'
+
 
 const categories = [
   {
   name: "Thrift",
   image: dummyImage2,
   path: "/directory/thriftandvintage",
-  alt: "Photo by @beccamchaffie on Unslpash"
+  alt: "Photo by @beccamchaffie on Unslpash",
+  classSize: "small",
+  icon: vcjacket,
 },{
   name: "Vintage",
   image: dummyImage3,
   path: "/directory/thriftandvintage",
-  alt: "Photo by @Alessiac_jpg on Unslpash"
+  alt: "Photo by @Alessiac_jpg on Unslpash",
+  classSize: "small",
+  icon: vcshoes,
 },{
   name: "Footwear",
   image: dummyImage4,
   path: "/directory/footwear",
   alt: "Photo by @mxpissioli on Unsplash",
+  classSize: "large",
+  icon: vcpants
 
 },{
   name: "Jewellery",
   image: dummyImage6,
   path: "/directory/jewellery",
-  alt: "Photo by @Joeyy_anne on Unsplash."
+  alt: "Photo by @Joeyy_anne on Unsplash.",
+  classSize: "large",
+  icon: vcjacket,
 },
 {
   name: "Upcycling",
   image: dummyImage5,
   alt: "Photo by @kat_snow on Unsplash",
-  path: "/directory/upcycling"
+  path: "/directory/upcycling",
+  classSize: "small",
+  icon: vcshoes,
 },{
   name: "Opshops",
   image: dummyImage1,
   path: "/directory/opshops",
-  alt: "Photo by @Prudenceearl on Unslpash."
+  alt: "Photo by @Prudenceearl on Unslpash.",
+  classSize: "large",
+  icon: vcpants
   }]
 
 export default function Explore({gImages}) {
@@ -58,19 +74,19 @@ export default function Explore({gImages}) {
      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f3d2c1" />
      <meta name="theme-color" content="#f3d2c1" />
       </Head>
-    <ExploreComp gImages={gImages} />
+    <ExploreComp gImages={gImages} categories={categories} />
     <DirectoryLanding categories={categories} />
     </>
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch("https://picsum.photos/v2/list");
-  const gImages = await res.json();
-  
-  return {
-    props:{
-      gImages,
-    },
-  }
-}
+// export async function getStaticProps() {
+//   const res = await fetch("https://picsum.photos/v2/list");
+//   const gImages = await res.json();
+//
+//   return {
+//     props:{
+//       gImages,
+//     },
+//   }
+// }
